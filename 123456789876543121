@@ -10,6 +10,10 @@ local MainSection = Main:NewSection("Click Threee dots To Know How GX15 Works. :
             MainSection:NewButton(" Dahood  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/project-malware/main/Test"))()
             end)
+	    
+	     MainSection:NewButton(" Pet Simulator X  ", "Wait it for it to Pop another GUI", function(v)  
+                loadstring(game:HttpGet("https://flashstudios.glitch.me/scripts/pet-simulator-x/source/file.lua"))()
+            end)
 
 MainSection:NewButton(" Build a Boat", "Wait it for it to Pop another GUI", function(v)
 
