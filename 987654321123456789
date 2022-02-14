@@ -1,0 +1,1146 @@
+wait(2)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/antiafk.lua"))()
+wait(1)
+
+if game.PlaceId == 2788229376 then
+	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+	local Window = Library.CreateLib("Rog GX15", "Synapse")
+
+	-- MAIN
+	local Main = Window:NewTab("Main")
+	local MainSection = Main:NewSection("Main")
+
+	MainSection:NewButton("Get items", "ButtonInfo", function(v)
+		char = game:GetService('Players').LocalPlayer.Character
+		-------------------------------------
+		function GetKnife()
+			wait(.1)
+			char.HumanoidRootPart.CFrame = CFrame.new(-680.2, 19.75, -254.97)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-115.495, 19.756, -453.45)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-418.208, 19.25, -748.694)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-418.208, 19.25, -748.694)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(33, 19.75, -184.6)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(243.495, 62, -450.5)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-103.53, 19.75, -220.21)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-581.775, 19.7549, -485.23)
+			wait()
+			char.HumanoidRootPart.CFrame = CFrame.new(-399.655, 19.7552, -461.55)
+			wait()
+		end
+
+		wait()
+		local X = char.HumanoidRootPart.CFrame.X
+		local Y = char.HumanoidRootPart.CFrame.Y
+		local Z = char.HumanoidRootPart.CFrame.Z
+		GetKnife()
+		repeat GetKnife() until plr.Backpack:FindFirstChild('[Knife]') and plr.Backpack:FindFirstChild('[LockPicker]')
+		char.HumanoidRootPart.CFrame = CFrame.new(X,Y+5,Z)
+	end)
+
+	MainSection:NewButton("Anti peper", "ButtonInfo", function(v)
+while wait() do 
+   fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Flowers] - $5"].ClickDetector)
+    wait(30)
+
+        		game.StarterGui:SetCore("SendNotification", {
+			Title = "";
+			Text = "Warning this is Loop"
+		})
+		
+end;
+	end) 
+
+	MainSection:NewButton("Auto Buy Flowers", "ButtonInfo", function(v)
+		wait()
+		plr.PlayerGui.MainScreenGui.PepperSpray:Destroy()
+		plr.PlayerGui.MainScreenGui.SNOWBALLFRAME:Destroy()
+	end) 
+
+	MainSection:NewButton("Chat Spy", "Warn trying cmds", function(v)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/spychat", true))()
+	end)
+
+	MainSection:NewButton("Infinite Yeild", "Warn trying cmds", function(v)
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+	end)
+
+
+	MainSection:NewButton("Target", "hunts enemy", function(v)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-VictimMenu-Script/main/Dh%20VictimMenu%3A%20Script"))()
+	end)
+
+	MainSection:NewButton("Silent Aim", "!you will get fps drop when your godmodded", function(v)
+		getgenv().Performance = true
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/i-nasa/intel_main/main/script.lua"))()
+	end)
+
+	MainSection:NewButton("Trashtalk macro", "KeyBlind - T", function(v)
+		local words = {
+			'ur bad',
+			'seed',
+			'im not locking ur just bad',
+			'kid im not locking XDXDXDXD ur just bad',
+			'clown',
+			'sonned',
+			'how did u miss that many shots',
+		}
+
+		local player = game.Players.LocalPlayer
+		local keybind = 't'
+
+		local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+		player:GetMouse().KeyDown:connect(function(key)
+			if key == keybind then
+				event:FireServer(words[math.random(#words)], "All")
+			end
+		end)
+	end)
+
+	MainSection:NewButton("Meele Reach", "ButtonInfo", function(v)
+		for i,v in pairs(game:GetService'Players'.LocalPlayer.Character:GetChildren())do
+			if v:isA("Tool") then
+				local a = Instance.new("SelectionBox",v.Handle)
+				a.Adornee = v.Handle
+				v.Handle.Size = Vector3.new(50, 50, 50)
+				--plr.Character.Humanoid:UnequipTools()
+				game.StarterGui:SetCore("SendNotification", {
+					Title = "REACH ";
+					Text = "ENABLED";
+					Duration = 20;
+				})
+
+
+			end
+		end          
+	end)
+	MainSection:NewButton("Shazam", "FE type", function(v)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/DaHoodScripts/ShazamScript/main/Shazam-RedorGreen%22"))()
+	end)
+	
+	local Tab = Window:NewTab("To Guns")
+	local Section22 = Tab:NewSection("Manual Buy")
+
+	Section22:NewButton("Glock", "ButtonInfo", function()
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(498.006, 48.151, -629.531)
+	end)
+
+    Section22:NewButton("Silencer", "ButtonInfo", function()
+        game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(498.778, 48.1087, -621.6456)
+	end)
+
+    Section22:NewButton("TaticalShotgun", "ButtonInfo", function()
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(470.878, 48.1272, -620.631)
+	end)
+
+    Section22:NewButton("P90", "ButtonInfo", function()
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(463.777, 48.1318, -619.13)
+	end)
+
+    Section22:NewButton("AUG", "ButtonInfo", function()
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-273.048, 52.3634, -213.312)
+	end)
+
+    Section22:NewButton("Shotgun", "ButtonInfo", function()
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-578.624, 8.47213, -725.132)
+	end)
+
+	-- Teleports
+	local Player = Window:NewTab("Teleport")
+	local PlayerSection = Player:NewSection("TP-Areas")
+
+    PlayerSection:NewButton("Safe1", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-130.274, -56.1623, 144.732)
+	end)
+
+    PlayerSection:NewButton("Safe2", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(204.65, 31.37, 200000)
+	end)
+
+	PlayerSection:NewButton("Prison", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-294.162, 22.644, -111.716)
+	end)
+
+	PlayerSection:NewButton("Sewer", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(112.622, -26.212, -277.321)
+	end)
+
+	PlayerSection:NewButton("Gunshop1", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-210.255, 21.674, -823.16)
+	end)
+
+	PlayerSection:NewButton("Phone Shop", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-120.121, 22.946, -870.425)
+	end)
+
+	PlayerSection:NewButton("UFO", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(71.565, 142.926, -690.33)
+	end)
+
+    PlayerSection:NewButton("Taco Shop", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(570.223, 46.4364, -492.731)
+	end)
+
+    PlayerSection:NewButton("Casino", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-881.627, 19.8001, -107.502)
+	end)
+
+    PlayerSection:NewButton("Cinema", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1006, 27.85, -106.325)
+	end)
+
+    PlayerSection:NewButton("PlayGround", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-297.946, 49.1652, -761.096)
+	end)
+
+	PlayerSection:NewButton("Gunshop2", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-582, 7.172, -739.015)
+	end)
+
+	PlayerSection:NewButton("Fitness", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-75.795, 23.701, -633.72)
+	end)
+
+    PlayerSection:NewButton("Church", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(205.77, 20.655, -37)
+	end)
+
+	PlayerSection:NewButton("Boxing", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-236.006, 23.151, -1120.531)
+	end)
+
+    PlayerSection:NewButton("Front School", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-653.187, 16.1875, 256.375)
+	end)
+
+    PlayerSection:NewButton("Inside School", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-531.312, 44.4375, 301.063)
+	end)
+
+	PlayerSection:NewButton("Bank", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-485.668, 23.631, -285.169)
+	end)
+
+    PlayerSection:NewButton("Bank2", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-480.338, 34.9701, -286.12)
+	end)
+
+	PlayerSection:NewButton("Admin Base", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-729.895, -37.642, -885.8)
+	end)
+
+    PlayerSection:NewButton("Admin Base2", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-871.13, -44.0242, -593.625)
+	end)
+
+	PlayerSection:NewButton("To-Bat", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-82.86, 22.244, -291.56)
+	end)
+
+    PlayerSection:NewButton("Carnival", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(84.0575, 24.9425, -1011.5)
+	end)
+
+	local PlayerSection = Player:NewSection("Some Random Areas")
+
+	PlayerSection:NewButton("a", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-17.375, -107.325, 137)
+	end)
+
+    PlayerSection:NewButton("b", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(134.625, -123.825, 152.75)
+	end)
+
+    PlayerSection:NewButton("c", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(240.824, -33.4999, 225.732)
+	end)
+
+    PlayerSection:NewButton("d", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-421.375, -26.5, 116.25)
+	end)
+
+    PlayerSection:NewButton("e", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-886.562, -35.4125, 330.312)
+	end)
+
+    PlayerSection:NewButton("f", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-871.005, -45.9042, -1164.5)
+	end)
+
+    PlayerSection:NewButton("f", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-871.005, -45.9042, -1164.5)
+	end)
+
+    PlayerSection:NewButton("f", "ButtonInfo", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(369.883, 46.5658, -403.938)
+	end)
+	
+	-- v2
+	local Tab = Window:NewTab("GUI'S")
+	local v2Section = Tab:NewSection("By Homo")
+
+	v2Section:NewButton("Encrypt", "Encrypt", function(v)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()
+	end)
+
+	v2Section:NewButton("Encrypt", "Encrypt", function(v)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/legacy/2point5legacy.lua"))()
+	end)
+
+	v2Section:NewButton("Artic", "", function(v)
+		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Karz1337/Arctic/main/ArcticV2"))()
+	end)
+
+	v2Section:NewButton("Auto Drop Gui", "Encrypt", function(v)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/sellingtooldh.lua"))()
+	end)
+
+	v2Section:NewButton("Advance alt control", "Encrypt", function(v)
+-- Only required when using command setup/lineuup.
+getgenv().Droppers = {1312819741,2395183348,2395242469,2395242469}
+-- Required for all commands. [operators can't drop]
+getgenv().Operator = {1821780137}
+-- Required to operate [default is ?]
+getgenv().Prefix = "?"
+-- Required for the command advertise or ad
+getgenv().AdvertiseMessage = ".gg/rogmarketv"
+-- Required when command ?buyerbring is used.
+getgenv().BringerID = {1312819741} -- Only 1 alt thats in the game.
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fuckscripts/dhshit/main/alt_control.lua"))()
+
+end)
+
+	v2Section:NewButton("Alt control", "Encrypt", function(v)
+		-- made by Rog
+-- input the operator [roblox id] in side of the mods "local mods {}" put it inside, example:
+-- local mods = {1341,13141,} like that ;)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/antiafk.lua"))()
+local player = game.Players.LocalPlayer
+local admsg = ".gg/ROGmarketV"
+local isamod = false
+local prefix = "-"
+local mods = {1821780137}
+
+if table.find(mods,player.UserId) then
+	isamod = true
+	game.StarterGui:SetCore("SendNotification",{
+		Title = "Operator";
+		Text = "Operator commands granted.";
+		Duration = 5;
+	})
+end
+
+local cashaura = false
+local cashauraplr = nil
+local adtoggle = false
+local droptoggle = false
+local function cmds(msg,plr)
+	if isamod == false or table.find(mods,plr) then
+		Mod = game.Players:GetPlayerByUserId(plr)
+		isamod = table.find(mods,player.UserId)
+		if msg == ".bring" then
+			if not isamod then
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Mod.Character.HumanoidRootPart.CFrame
+			end
+		end
+		if msg == ".drop" then
+			if not isamod then
+				droptoggle = true
+				local Autoloop
+				local autoloopfun = function()
+					local amttodrp = 10000
+					if player.DataFolder.Currency.Value > 10000 then
+						amttodrp = 10000
+					else
+						amttodrp = player.DataFolder.Currency.Value
+					end
+					game.ReplicatedStorage.MainEvent:FireServer("DropMoney",amttodrp)
+				end;
+				local Begin = function()
+					Autoloop = game:GetService("RunService").Heartbeat:Connect(autoloopfun);
+				end;
+				local Stop = function()
+					Autoloop:Disconnect()
+				end;
+				Begin()	
+				repeat wait() until droptoggle == false
+				Stop()
+			end
+		end
+		if msg == ".undrop" then
+			if not isamod then
+				droptoggle = false
+			end
+		end
+		if msg == ".crash" then
+			if not isamod then
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("alright, leave the game!", 'All')
+				wait(5)
+				loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/dahoodcrasher.lua"))()
+			end
+		end
+		if msg == ".woof" then
+			if not isamod then
+				local oldplc = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+				wait()
+				function god()
+					attack = player.Character:FindFirstChild("BodyEffects").Attacking
+					if attack then
+						attack:Destroy()
+					end
+				end
+				player.CharacterAdded:Connect(function()
+					wait(1)
+					god()
+					wait()
+					player.Character.HumanoidRootPart.CFrame = oldplc
+				end)
+				player.Character.Humanoid.Health = 0
+			end
+		end
+		if msg == ".refresh" then
+			if not isamod then
+				game.Players.LocalPlayer.Character.Humanoid.Health = 0
+			end
+		end
+		if msg == ".ad" then
+			if not isamod then
+				adtoggle = true
+				repeat
+					game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(admsg, 'All')
+					wait(1)
+				until adtoggle == false
+			end
+		end
+		if msg == ".unad" then
+			if not isamod then
+				adtoggle = false
+			end
+		end
+		if msg == ".freeze" then
+			if not isamod then
+				player.Character.HumanoidRootPart.Anchored = true
+			end
+		end
+		if msg == ".unfreeze" then
+			if not isamod then
+				player.Character.HumanoidRootPart.Anchored = false
+			end
+		end
+		if msg == ".wal" then
+            if not isamod then
+                if game.Players.LocalPlayer.Backpack:FindFirstChild("Wallet") then
+                    game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChild("Wallet"))
+                end
+            end
+        end
+        if msg == ".dewal" then
+            if not isamod then
+                if game.Players.LocalPlayer.Character:FindFirstChild("Wallet") then
+                    game.Players.LocalPlayer.Character.Humanoid:UnequipTools(game.Players.LocalPlayer.Character:FindFirstChild("Wallet"))
+                end
+            end
+        end
+		if string.find(string.split(msg)[1],'.setup') then
+			if not isamod then
+				local targetarea = Mod.Character.HumanoidRootPart.CFrame
+				local pickone = {'1','2'}
+				local splitted = string.split(msg,' ')
+				if splitted[2] ~= nil then
+					if splitted[2] == "normal" then
+						if pickone[math.random(#pickone)] == "1" then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(math.random(targetarea.X,targetarea.X+10),targetarea.Y,math.random(targetarea.Z,targetarea.Z+10))
+							wait(0.4)
+							player.Character.HumanoidRootPart.Anchored = true
+						end
+						if pickone[math.random(#pickone)] == "2" then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(math.random(targetarea.X-10,targetarea.X),targetarea.Y,math.random(targetarea.Z-10,targetarea.Z))
+							wait(0.4)
+							player.Character.HumanoidRootPart.Anchored = true
+						end
+					end
+					if splitted[2] == "high" then
+						if pickone[math.random(#pickone)] == "1" then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(math.random(targetarea.X,targetarea.X+10),targetarea.Y+18,math.random(targetarea.Z,targetarea.Z+10))
+							wait(0.4)
+							player.Character.HumanoidRootPart.Anchored = true
+						end
+						if pickone[math.random(#pickone)] == "2" then
+							game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(math.random(targetarea.X-10,targetarea.X),targetarea.Y+18,math.random(targetarea.Z-10,targetarea.Z))
+							wait(0.4)
+							player.Character.HumanoidRootPart.Anchored = true
+						end
+					end
+ 				end
+			end
+		end
+		if msg == ".unsetup" then
+			if not isamond then
+				player.Character.HumanoidRootPart.Anchored = false
+				wait()
+				player.Character.HumanoidRootPart.CFrame = Mod.Character.HumanoidRootPart.CFrame
+			end
+		end
+		if msg == ".checkcash" then
+			if not isamond then
+				local amt = 0
+				for i,v in pairs(game.Workspace.Ignored.Drop:GetChildren()) do
+					if v.Name == "MoneyDrop" then
+						local cur = string.split(v.BillboardGui.TextLabel.Text,"$")[2]
+						if string.match(cur,',') then
+							amt = amt + cur:gsub("%,","")
+						else
+							amt = amt + cur
+						end
+						print(string.split(v.BillboardGui.TextLabel.Text,'$')[2])
+					end
+				end
+				function fornum(amt)
+					amt = tostring(amt)
+					return amt:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+				end
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("$"..fornum(amt), 'All')
+			end
+		end
+		if msg == ".unpickup" then
+            if not isamod then
+                cashaura = false
+            end
+        end
+        if string.find(string.split(msg)[1],prefix.."pickup") then
+            if not isamod then
+                local splittedlel = string.split(msg,' ')
+                if splittedlel[2] ~= nil then
+                    local txt = splittedlel[2]
+                    print(txt)
+                    for i,v in pairs(game.Players:GetChildren()) do
+                        if (string.sub(string.lower(v.Name),1,string.len(txt))) == string.lower(txt) then
+                            cashauraplr = v.Name
+                            game.Players[cashauraplr].Character.HumanoidRootPart.CFrame = Mod.Character.HumanoidRootPart.CFrame
+							if player.Name == cashauraplr then
+								cashaura = true
+								local Autoloop
+								local autoloopfun = function()
+									for i,v in pairs(game:GetService('Workspace')['Ignored']['Drop']:GetChildren()) do
+										if v:IsA('Part') then
+											if (v.Position - player.Character.HumanoidRootPart.Position).Magnitude <= 14 then
+												fireclickdetector(v:FindFirstChild('ClickDetector'))
+											end
+										end
+									end
+								end;
+								local Begin = function()
+									Autoloop = game:GetService("RunService").Heartbeat:Connect(autoloopfun);
+								end;
+								local Stop = function()
+									Autoloop:Disconnect()
+								end;
+								Begin()	
+								repeat wait() until cashaura == false
+								Stop()
+							end
+                            return
+                        end  
+                    end
+                end
+            end
+        end
+	end
+end
+
+for i,v in pairs(game:GetService('Players'):GetChildren()) do
+	if table.find(mods,v.UserId) then
+		v.Chatted:Connect(function(msg)
+			cmds(msg,v.UserId)
+		end)
+	end
+end
+
+game.Players.PlayerAdded:Connect(function(plr)
+	if table.find(mods,plr.UserId) then
+		plr.Chatted:Connect(function(msg)
+			cmds(msg,plr.UserId)
+		end)
+	end
+end)
+
+local function gfx_lowered()
+    local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+    local g = game
+    local w = g.Workspace
+    local l = g.Lighting
+    local t = w.Terrain
+    t.WaterWaveSize = 0
+    t.WaterWaveSpeed = 0
+    t.WaterReflectance = 0
+    t.WaterTransparency = 0
+    l.GlobalShadows = false
+    l.FogEnd = 9e9
+    l.Brightness = 0
+    settings().Rendering.QualityLevel = "Level01"
+    for i,v in pairs(g:GetDescendants()) do
+        if v:IsA("Part") or v:IsA("Union") or v:IsA("MeshPart") then
+            v.Material = "Plastic"
+            v.Reflectance = 0
+        elseif v:IsA("Decal") and decalsyeeted then 
+            v.Transparency = 1
+        elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then 
+            v.Lifetime = NumberRange.new(0)
+        end
+    end
+end
+--gfx_lowered()
+
+game.StarterGui:SetCore("SendNotification",{
+	Title = "Controll Script!";
+	Text = "Excuted";
+	Duration = 10;
+})
+	end)
+
+	v2Section:NewButton("Alt controlv2", "Encrypt", function(v)
+		--[[
+--// Made by Homolife#1525
+
+Auto-Features:
+[+] Anti-Afk
+
+Settings:
+Enter in the droppers ID's inside of the "getgenv().Droppers = {}" <- inside of {}
+Enter in the operators ID's inside of the "getgenv().Operator = {}" <- inside of {}
+
+Only execute this script for the alts.
+For Krnl put this script into auto-execute folder.
+
+Default prefix: .
+Add a "." to the player argument to apply to all alts.
+
+Commands:
+
+.setup [place] - Setup command
+Places: admin
+
+.drop [player] - Starts to drop 10k or below.
+.undrop [player] - Stops dropping.
+.block [player] - Starts blocking.
+.unblock [player] - Starts unblocking.
+.bring [player] - Brings an alt/dropper to the operator.
+.refresh [player] - Refreshes an alt/droppers character.
+.hide [player] - Hides a dropper/alt.
+.unhide [player] - Brings back a dropper/alt from hiding.
+.ad [player] [message] - Starts to advertise a message.
+.unad [player] - Stops advertising.
+.freeze [player] - Freezes a player.
+.unfreeze [player] - Unfreezes a player.
+.air [player] - Makes a alt/dropper float.
+.gpu [player] - Makes a alt/dropper screen black to reduce GPU power.
+.setfps [player] [FPS] - Reduces a alts FPS.
+]]
+
+-- ^^^^^^^^^ OPEN SOURCE!!!
+
+getgenv().Prefix = "."
+
+getgenv().Operator = {1821780137}
+
+getgenv().Droppers = {2395223942}
+getgenv().Droppers = {2395183348}
+getgenv().Droppers = {2395242469}
+getgenv().Droppers = {2218760704}
+getgenv().Droppers = {1654315397}
+getgenv().Droppers = {1312819741}
+getgenv().Droppers = {2710094666}
+getgenv().Droppers = {2732580653}
+getgenv().Droppers = {3202631183}
+getgenv().Droppers = {3202640105}
+getgenv().Droppers = {3195516860}
+getgenv().Droppers = {3202631183}
+getgenv().Droppers = {3202631183}
+getgenv().Droppers = {3202631183}
+
+--// Made by Homolife#1525
+--// discord.gg/encrypt
+--// Originally created to prove skids on how easy it is to code an alt control, with advance commands.
+
+local player = game.Players.LocalPlayer
+
+player.Idled:Connect(function()
+    game:GetService("VirtualUser"):Button2Down(Vector2.new(0,0),game.Workspace.CurrentCamera.CFrame)
+    wait(1)
+    game:GetService("VirtualUser"):Button2Up(Vector2.new(0,0),game.Workspace.CurrentCamera.CFrame)
+end)
+
+local function notify(a,b,c)
+    game.StarterGui:SetCore("SendNotification",{
+        Title = a;
+        Text = b;
+        Duration = c;
+    })
+end
+
+local function annouce(anc)
+    game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(anc, 'All')
+end
+
+local function fancynum(num)
+    num = tostring(num)
+    return num:reverse():gsub("%d%d%d", "%1,"):reverse():gsub("^,", "")
+end
+
+local isaopeartor = false
+
+local success, err = pcall(function()
+    if table.find(Operator,player.UserId) then
+        notify("Operator","Permission granted.",10)
+        isaopeartor = true
+    else
+        notify("Alt","Name: "..player.Name,math.huge)
+    end
+end)
+if err then notify("Error!","Error occured!",5) return end
+
+local origin_spot
+local adver_msg
+local hidden_origin_spot
+
+local dropping = false
+local blocking = false
+local advert = false
+
+local function main_cmds(msg,plr)
+    if isaopeartor == false or table.find(Operator,plr) then
+        local operator = game.Players:GetPlayerByUserId(plr)
+        msg = string.lower(msg)
+        cmd = string.split(msg," ")
+        if cmd[2] and cmd[1] then
+            if cmd[1] == Prefix.."setup" then
+                local places = {"admin"}
+                if table.find(places,cmd[2]) then
+                    local success, err = pcall(function()
+                        if cmd[2] == 'admin' then
+                            local pos = {
+                                a1 = "-871,-39,-589",
+                                a2 = "-871,-39,-619",
+                                a3 = "-906,-40,-620",
+                                a4 = "-907,-39,-590",
+                                a5 = "-908,-40,-561",
+                                a6 = "-873,-39,-559",
+                                a7 = "-837,-40,-559",
+                                a8 = "-836,-39,-590",
+                                a9 = "-837,-40,-619",
+                                a10 = "-856,-39,-606",
+                                a11 = "-871,-39,-606",
+                                a12 = "-887,-39,-606",
+                                a13 = "-887,-39,-590",
+                                a14 = "-886,-39,-573",
+                                a15 = "-872,-39,-574",
+                                a16 = "-857,-39,-574",
+                                a17 = "-856,-39,-588",
+                                a18 = "-820,-40,-629",
+                                a19 = "-922,-40,-629",
+                                a20 = "-924,-40,-550",
+                                a21 = "-821,-40,-549",
+                                a22 = "-864,-39,-580",
+                                a23 = "-864,-39,-580",
+                                a24 = "-881,-39,-580",
+                                a25 = "-881,-39,-600",
+                                a26 = "-864,-39,-600",
+                            }
+                            local cnt = 0
+                            for i,v in pairs(Droppers) do
+                                if game.Players:GetPlayerByUserId(v) then
+                                    cnt = cnt + 1
+                                    local new_pos = pos['a'..cnt]
+                                    local split_cframe = string.split(new_pos,",")
+                                    local x,y,z = split_cframe[1],split_cframe[2],split_cframe[3]
+                                    game.Players:GetPlayerByUserId(v).Character.HumanoidRootPart.CFrame = CFrame.new(x,y,z)
+                                end
+                            end
+                            if game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored == true then
+                                game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = false
+                            end
+                            local HumanoidRootPart_ = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(HumanoidRootPart_.X,HumanoidRootPart_.Y+7,HumanoidRootPart_.Z)
+                            wait()
+                            game.Players.LocalPlayer.Character.HumanoidRootPart.Anchored = true
+                        end
+                    end)
+                    if err then print(err) end
+                end
+            elseif cmd[1] == Prefix.."drop" then
+                if cmd[2] == "." then
+                    annouce(player.Name.." started dropping!")
+                    dropping = true
+                    repeat
+                        local dropamt = 10000
+                        if player.DataFolder.Currency.Value >= 10000 then
+                            dropamt = 10000
+                        else
+                            dropamt = player.DataFolder.Currency.Value
+                        end
+                        game.ReplicatedStorage.MainEvent:FireServer("DropMoney",dropamt)
+                        wait(0.1)
+                    until dropping == false
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    dropping = true
+                    annouce(player.Name.." started dropping!")
+                    repeat
+                        local dropamt = 10000
+                        if player.DataFolder.Currency.Value >= 10000 then
+                            dropamt = 10000
+                        else
+                            dropamt = player.DataFolder.Currency.Value
+                        end
+                        game.ReplicatedStorage.MainEvent:FireServer("DropMoney",dropamt)
+                        wait(0.1)
+                    until dropping == false
+                end
+            elseif cmd[1] == Prefix.."undrop" then
+                if cmd[2] == "." then
+                    annouce(player.Name.." stopped dropping!")
+                    dropping = false
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    dropping = false
+                    annouce(player.Name.." stopped dropping!")
+                end
+            elseif cmd[1] == Prefix.."block" then
+                if cmd[2] == "." then
+                    annouce(player.Name.." started blocking!")
+                    blocking = true
+                    repeat
+                        game.ReplicatedStorage.MainEvent:FireServer("Block",true)
+                        wait(0.1)
+                    until blocking == false
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    annouce(player.Name.." started blocking!")
+                    blocking = true
+                    repeat
+                        game.ReplicatedStorage.MainEvent:FireServer("Block",true)
+                        wait(0.1)
+                    until blocking == false
+                end
+            elseif cmd[1] == Prefix.."unblock" then
+                if cmd[2] == "." then
+                    annouce(player.Name.." stopped blocking!")
+                    blocking = false
+                    game.ReplicatedStorage.MainEvent:FireServer("Block",false)
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    annouce(player.Name.." stopped blocking!")
+                    blocking = false
+                    game.ReplicatedStorage.MainEvent:FireServer("Block",false)
+                end
+            elseif cmd[1] == Prefix.."bring" then
+                if cmd[2] == "." then
+                    player.Character.HumanoidRootPart.CFrame = operator.Character.HumanoidRootPart.CFrame
+                    annouce(player.Name.." is here.")
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    player.Character.HumanoidRootPart.CFrame = operator.Character.HumanoidRootPart.CFrame
+                    annouce(player.Name.." is here.")
+                end
+            elseif cmd[1] == Prefix.."refresh" then
+                if cmd[2] == "." then
+                    origin_spot = player.Character.HumanoidRootPart.CFrame
+                    player.Character.Humanoid.Health = 0
+                    wait(7.5)
+                    player.Character.HumanoidRootPart.CFrame = origin_spot
+                    annouce(player.Name.." character refreshed.")
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    origin_spot = player.Character.HumanoidRootPart.CFrame
+                    player.Character.Humanoid.Health = 0
+                    wait(7.5)
+                    player.Character.HumanoidRootPart.CFrame = origin_spot
+                    annouce(player.Name.." character refreshed.")
+                end
+            elseif cmd[1] == Prefix.."hide" then
+                if cmd[2] == "." then
+                    hidden_origin_spot = player.Character.HumanoidRootPart.CFrame
+                    player.Character.HumanoidRootPart.CFrame = CFrame.new(651,47,-441)
+                    annouce(player.Name.." is now hidden.")
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    hidden_origin_spot = player.Character.HumanoidRootPart.CFrame
+                    player.Character.HumanoidRootPart.CFrame = CFrame.new(651,47,-441)
+                    annouce(player.Name.." is now hidden.")
+                end
+            elseif cmd[1] == Prefix.."unhide" then
+                if cmd[2] == "." then
+                    if player.Character.HumanoidRootPart.Anchored == true then
+                        player.Character.HumanoidRootPart.Anchored = false
+                    end
+                    player.Character.HumanoidRootPart.CFrame = hidden_origin_spot
+                    annouce(player.Name.." is now unhidden.")
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    if player.Character.HumanoidRootPart.Anchored == true then
+                        player.Character.HumanoidRootPart.Anchored = false
+                    end
+                    player.Character.HumanoidRootPart.CFrame = hidden_origin_spot
+                    annouce(player.Name.." is now unhidden.")
+                end
+            elseif cmd[1] == Prefix.."air" then
+                if cmd[2] == "." then
+                    local cur_human = player.Character.HumanoidRootPart.CFrame
+                    player.Character.HumanoidRootPart.CFrame = CFrame.new(cur_human.X,cur_human.Y+7,cur_human.Z)
+                    wait()
+                    player.Character.HumanoidRootPart.Anchored = true
+                    annouce(player.Name.." is now floating.")
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    local cur_human = player.Character.HumanoidRootPart.CFrame
+                    player.Character.HumanoidRootPart.CFrame = CFrame.new(cur_human.X,cur_human.Y+7,cur_human.Z)
+                    wait()
+                    player.Character.HumanoidRootPart.Anchored = true
+                    annouce(player.Name.." is now floating.")
+                end
+            elseif cmd[1] == Prefix.."unad" then
+                if cmd[2] == "." then
+                    advert = false
+                    annouce(player.Name.." stopped advertising.")
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    advert = false
+                    annouce(player.Name.." stopped advertising.")
+                end
+            elseif cmd[1] == Prefix.."freeze" then
+                if cmd[2] == "." then
+                    player.Character.HumanoidRootPart.Anchored = true
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    player.Character.HumanoidRootPart.Anchored = true
+                end
+            elseif cmd[1] == Prefix.."unfreeze" then
+                if cmd[2] == "." then
+                    player.Character.HumanoidRootPart.Anchored = false
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    player.Character.HumanoidRootPart.Anchored = false
+                end
+            elseif cmd[1] == Prefix.."gpu" then
+                if cmd[2] == "." then
+                    local qwertgh = Instance.new("ScreenGui")
+                    local Frame = Instance.new("Frame")
+                    qwertgh.Name = "qwertgh"
+                    qwertgh.Parent = game.CoreGui
+                    qwertgh.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+                    Frame.Parent = qwertgh
+                    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                    Frame.Position = UDim2.new(-0.34374997, 0, -0.585276067, 0)
+                    Frame.Size = UDim2.new(0, 10000, 0, 10000)
+                    annouce(player.Name.." has GPU saver on.")
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    local qwertgh = Instance.new("ScreenGui")
+                    local Frame = Instance.new("Frame")
+                    qwertgh.Name = "qwertgh"
+                    qwertgh.Parent = game.CoreGui
+                    qwertgh.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+                    Frame.Parent = qwertgh
+                    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                    Frame.Position = UDim2.new(-0.34374997, 0, -0.585276067, 0)
+                    Frame.Size = UDim2.new(0, 10000, 0, 10000)
+                    annouce(player.Name.." has GPU saver on.")
+                end
+            end
+        elseif cmd[1] and cmd[2] and cmd[3] then
+            if cmd[1] == Prefix.."setfps" then
+                if cmd[2] == "." then
+                    setfps(tonumber(cmd[3]))
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    setfps(tonumber(cmd[3]))
+                end
+            elseif cmd[1] == Prefix.."ad" then
+                if cmd[2] == "." then
+                    advert = false
+                    annouce(player.Name.." started advertising.")
+                    advert = true
+                    adver_msg = cmd[3]
+                    repeat
+                        annouce(adver_msg)
+                        wait(3)
+                    until advert == false
+                elseif (string.sub(string.lower(player.Name),1,string.len(cmd[2]))) == string.lower(cmd[2]) then
+                    advert = true
+                    annouce(player.Name.." started advertising.")
+                    adver_msg = cmd[3]
+                    repeat
+                        annouce(adver_msg)
+                        wait(3)
+                    until advert == false
+                end
+            end
+        end
+    end
+end
+
+for i,v in pairs(game.Players:GetChildren()) do
+    if table.find(Operator,v.UserId) then
+        v.Chatted:Connect(function(msg)
+            main_cmds(msg,v.UserId)
+        end)
+    end
+end
+
+game.Players.PlayerAdded:Connect(function(plr)
+    if table.find(Operator,plr.UserId) then
+        plr.Chatted:Connect(function(msg)
+            main_cmds(msg,plr.UserId)
+        end)
+    end
+end)
+	end)
+
+	-- v2
+	local Tab = Window:NewTab("Selling Stuff")
+	local Section1 = Tab:NewSection("Money Stuff")
+
+	Section1:NewToggle("Start Dropping", "On Loop!", function(state)
+
+		if state then
+			while true do
+
+				local args = {
+					[1] = "DropMoney",
+					[2] = 100
+
+				}
+
+				game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+				wait(15)
+
+
+
+				local args = {
+					[1] = "DropMoney",
+					[2] = 100
+
+				}
+
+				game:GetService("ReplicatedStorage").MainEvent:FireServer(unpack(args))
+				wait()
+
+
+			end
+		else
+			print("Is on Endless Loop Drop")
+		end
+	end)
+
+	Section1:NewButton("Anti-AFK", "ButtonInfo", function(v)
+		local vu = game:GetService("VirtualUser")
+		game:GetService("Players").LocalPlayer.Idled:connect(function()
+			vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+			wait(1)
+			vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		end)
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "Anti - AFK";
+			Text = "Enabled ";
+			Duration = 20;
+		})
+	end)
+
+	Section1:NewButton("Crash", "pick any v1 or v2", function(v)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/dahoodcrasher.lua"))()
+	end)
+
+	Section1:NewButton("Cash count", "Counts money on the ground", function(v)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/dhccounter.lua"))()
+	end)
+
+    local Section1 = Tab:NewSection("Drop Zone's")
+
+    Section1:NewButton("Zone 1", "Counts money on the ground", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(637.745, 38.25, -64)
+	end)
+
+    Section1:NewButton("Zone 2", "Counts money on the ground", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-130.274, -56.1623, 144.732)
+	end)
+
+    Section1:NewButton("Zone 3", "Counts money on the ground", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(204.65, 31.37, 200000)
+	end)
+
+    Section1:NewButton("Zone 4", "", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-965.88, -51.7792, -1014.62)
+	end)
+
+    Section1:NewButton("Zone 5", "Counts money on the ground", function(v)
+		game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(44.87, 12.625, 182.425)
+	end)
+
+
+elseif game.PlaceId == 3956818381 then
+	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+	local Window = Library.CreateLib("Ninja Legends", "Sentinel")
+
+	-- MAIN
+	local Main = Window:NewTab("Main")
+	local MainSection = Main:NewSection("Main")
+
+	MainSection:NewToggle("Auto Swing", "Make your player autoswing", function(v)
+		getgenv().autoswing = v
+		while true do
+			if not getgenv().autoswing then return end
+			for _,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v:FindFirstChild("ninjitsuGain") then
+					game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+					break
+				end
+			end
+			local A_1 = "swingKatana"
+			local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+			Event:FireServer(A_1)
+			wait(0.1)
+		end
+	end)
+
+	MainSection:NewToggle("Auto Sell", "Makes your player autosell", function(v)
+		getgenv().autosell = v
+		while true do
+			if getgenv().autoswing == false then return end
+			game:GetService("Workspace").sellAreaCircles["sellAreaCircle16"].circleInner.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+			wait(0.1)
+			game:GetService("Workspace").sellAreaCircles["sellAreaCircle16"].circleInner.CFrame = CFrame.new(0,0,0)
+			wait(0.1)
+		end
+	end)
+
+	MainSection:NewButton("Unlock all islands", "Unlocks all islands", function()
+		local oldcframe = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+		for _,v in pairs(game:GetService("Workspace").islandUnlockParts:GetChildren()) do
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+			wait(0.1)
+		end
+		wait(0.1)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = oldcframe
+	end)
+
+	MainSection:NewToggle("Auto buy all swords", "Auto buys all swords", function(v)
+		getgenv().buyswords = v
+		while true do
+			if not getgenv().buyswords then return end
+			local A_1 = "buyAllSwords"
+			local A_2 = "Inner Peace Island"
+			local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+			Event:FireServer(A_1, A_2)
+			wait(0.5)
+		end
+	end)
+
+	MainSection:NewToggle("Auto buy all belts", "Auto buys all belts", function(v)
+		getgenv().buybelts = v
+		while true do
+			if not getgenv().buybelts then return end
+			local A_1 = "buyAllBelts"
+			local A_2 = "Inner Peace Island"
+			local Event = game:GetService("Players").LocalPlayer.ninjaEvent
+			Event:FireServer(A_1, A_2)
+			wait(0.5)
+		end
+	end)
+end
