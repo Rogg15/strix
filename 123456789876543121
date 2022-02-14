@@ -1,7 +1,7 @@
 wait(4)
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Rog GX15", "Synapse")
+local Window = Library.CreateLib("                           Strix Rog GX15", "Synapse")
 
 -- MAIN
 local Main = Window:NewTab(" Game Script's ")
@@ -755,7 +755,7 @@ end
 
 
 
-local Main = Window:NewTab("Admin/Stuff's")
+local Main = Window:NewTab("Cmds")
 local MainSection = Main:NewSection("Server, Admin GUI")
 
 MainSection:NewButton("ServerFinder", "ButtonInfo", function(v)
@@ -793,7 +793,7 @@ MainSection:NewButton("ServerFinder", "ButtonInfo", function(v)
 
 
 
-                    local Main = Window:NewTab("Inc/Troll")
+                    local Main = Window:NewTab("Inc")
                     local MainSection = Main:NewSection("Works Any Game.")
 
                     MainSection:NewButton("ChatSpy", "Inorder to Show Rejoin.", function(v)
@@ -821,7 +821,7 @@ MainSection:NewButton("ServerFinder", "ButtonInfo", function(v)
                                     loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
                                 end)
 
-                        local MainSection = Main:NewSection("Works DOSEN'T Any Game,Mostly R6/AntiExploit")
+                        local MainSection = Main:NewSection(" DOSEN'T Works Any Game,Mostly R6/AntiExploit")
 
                         MainSection:NewButton("Client Headless", "Inorder to Show Rejoin.", function(v)
                             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/client_headless-1.txt", true))()
@@ -1117,7 +1117,7 @@ v1MainSection:NewButton("Stable Net", "Only Paid Exploit", function(v)
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/uhcokieloki"))()
 end)
 
-local v1MainSection = Main:NewSection("  Fe Script ")
+local v1MainSection = Main:NewSection("  Fe Hub's ")
 
 v1MainSection:NewButton("Animate hub", "Stable Animate Net", function(v)       
     loadstring(game:HttpGet(('https://raw.githubusercontent.com/bedra45/BeachHub/main/BeachAnimation'),true))()
