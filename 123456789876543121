@@ -1,11 +1,63 @@
-wait(4)
+wait(3)
+
+wait(0.2)
+
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Checking Whitelisted... ";
+		Text = "Loading...";
+		Duration = 10;
+	})
+		wait(1)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Whitelisted";
+		Text = "Load Complete";
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+		Duration = 20;
+
+	 wait(1)
+
+    
+
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib(" Strix Rog GX15 | Advance I", "Synapse")
+local Window = Library.CreateLib(" Strix Rog GX15 | Advance I   Universal Hub ", "Synapse")
 
--- MAIN
-local Main = Window:NewTab(" Game Script's ")
-local MainSection = Main:NewSection("Click Threee dots To Know How GX15 Works. :)")
+
+local Main = Window:NewTab(" Main Info ")
+local MainSection = Main:NewSection("Welcome, User!")
+
+local MainSection = Main:NewSection("Multi Games , Fe scripts , Mics  Supported!")
+
+local MainSection = Main:NewSection("Best Suggested Scripts")
+
+
+MainSection:NewButton("Custom Fun Script", "ButtonInfo", function(v)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Game";
+        Text = " Prison Life ";
+        Duration = 20;
+    })
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/strix2/main/ddddd?token=GHSAT0AAAAAABRJGTQY2NGJRJDPS22OC6JAYQP37NQ"))()
+    end)
+
+
+
+MainSection:NewButton(" Credits  ", " Maker of the GUI", function(v)  
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "Owned by";
+        Text = " Damain#1476 ";
+        Duration = 20;
+    })
+end)
+
+
+
+
+wait(0.4)
+
+
+local Main = Window:NewTab(" Game Scripts ")
+local MainSection = Main:NewSection("Multiple Games Supported")
 
             MainSection:NewButton(" Dahood  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/project-malware/main/Test"))()
@@ -13,6 +65,10 @@ local MainSection = Main:NewSection("Click Threee dots To Know How GX15 Works. :
 	    
 	     MainSection:NewButton(" Pet Simulator X  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/XLinestX/ShinyToolSupported/main/ShinyTool.lua"))()
+	     end)
+        
+        	     MainSection:NewButton(" Pet Simulator X v2  ", "Wait it for it to Pop another GUI", function(v)  
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
             end)
 
 MainSection:NewButton(" Build a Boat", "Wait it for it to Pop another GUI", function(v)
@@ -31,6 +87,15 @@ end)
 v1Section:NewButton("Vynx Gui", "ButtonInfo", function(v)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Build%20A%20Boat%20For%20Treasure/BABFT"))()
 end)
+
+
+v1Section:NewKeybind("Open/Close GUI", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+
+
+
     ---MAIN+
 local Main = Window:NewTab("Mics")
 local v1Section = Main:NewSection("FPS/Admin hubs")
@@ -299,7 +364,9 @@ end)
 
 
 
-
+MainSection:NewButton(" Jail-bird ", "Wait it for it to Pop another GUI", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/mrgunz/UnnamedCheat/main/Loader"))();
+end)
 
 
 MainSection:NewButton(" Jailbreak ", "Wait it for it to Pop another GUI", function(v)
@@ -556,15 +623,180 @@ end)
                 loadstring(game:HttpGet("https://uraniumhub.tk/storage/script.lua", true))()
             end)
 
-            MainSection:NewButton(" DeviousLickSimulator  ", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" SaberSimulator  ", "Wait it for it to Pop another GUI", function(v)  
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Prajon/Saber-Simulator/main/Saber-Simulator-FREE-SCRIPT", true))()
+            end)
+
+            MainSection:NewButton(" ShindoLife  ", "Wait it for it to Pop another GUI", function(v)  
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+            end)
+
+             MainSection:NewButton(" CounterBlox  ", "Wait it for it to Pop another GUI", function(v)  
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/Pawel12d/hexagon/main/scripts/CounterBlox.lua', true))()
+            end)
+
+            MainSection:NewButton(" PhantomForces  ", "Wait it for it to Pop another GUI", function(v)  
+pcall(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/Phantom-Forces-Cheat/main/Main.lua", true))()
+ end)
+            end)
+
+            MainSection:NewButton(" Piggy  ", "Wait it for it to Pop another GUI", function(v)  
+
+                local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+                local Window = Library.CreateLib("Piggy", "Synapse")
+                -- MAIN
+            local Main = Window:NewTab("Main")
+            local v7Section = Main:NewSection("More Soon")
+            
+            
+            v7Section:NewButton("Piggy GUI", "ButtonInfo", function(v)
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Piggy/Piggy"))()
+                    end)
+            
+                    v7Section:NewButton("Get Items", "ButtonInfo", function(v)
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/piggy%20items%20get",true))();
+                    end)
+
+                    v7Section:NewButton("Infinite Yeild", "ButtonInfo", function(v)
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FatesAdmin",true))();
+                    end)
+
+                    local Main = Window:NewTab("Options")
+                    local v7Section = Main:NewSection("  Client ")
+
+                    v7Section:NewButton("Rejoin Server", "ButtonInfo", function(v)
+                        while true do wait()
+                            getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(Kick)
+                                if Kick.Name == 'ErrorPrompt' and Kick:FindFirstChild('MessageArea') and Kick.MessageArea:FindFirstChild("ErrorFrame") then
+                                    game:GetService("TeleportService"):Teleport(game.PlaceId)
+                                end
+                                
+                            end)
+                            wait(2)
+                            game.Players.LocalPlayer:kick()
+                            end
+                        end)
+                    
+                        v7Section:NewButton("Force Reset", "ButtonInfo", function(v)
+                        local ctr = game.Players.LocalPlayer.Character
+                        ctr.Humanoid.Health = 0
+                        end)
+                    
+
+
+
+                    local Main = Window:NewTab("Settings")
+                    local v7Section = Main:NewSection("  Visual ")
+                   
+                   
+                    v7Section:NewButton("Anti-AFK", "Be Afk Forever!", function(v)
+                   local vu = game:GetService("VirtualUser")
+                   game:GetService("Players").LocalPlayer.Idled:connect(function()
+                       vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+                       wait(1)
+                       vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+                   end)
+                   game.StarterGui:SetCore("SendNotification", {
+                       Title = "Anti - AFK";
+                       Text = "Enabled ";
+                       Duration = 20;
+
+
+                       
+                   })
+                   end)
+                   
+                   v7Section:NewButton("Anti-Ban", "Ignore Ban System", function(v)
+                       loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Anti_Chat_Log-1.txt"))()
+                       end)
+                   
+                   
+                       v7Section:NewButton("Anti-Chatlog", "Ignore Bannable ChatSysmtem", function(v)
+                           loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Anti_Chat_Log-1.txt"))()
+                           end)
+                   
+                           v7Section:NewButton("Anti-Kick", "Prevents Kick Scripts", function(v)
+                               loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Remove_kick_messsage.txt", true))()
+                               end)
+                   
+                               v7Section:NewButton("Anti-Report", "Prevents Getting Reported", function(v)
+                                   setfflag("AbuseReportScreenshotPercentage", 0)
+                   setfflag("DFFlagAbuseReportScreenshot", "False")
+                                   end)
+                   
+                                   v7Section:NewButton("Chat-Spy", "Spy some nerds", function(v)
+                                   loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/spychat", true))()
+                                   end)
+                   
+                   
+                                   v7Section:NewKeybind("Close/Open ", "Close GUI", Enum.KeyCode.F, function()
+                                       Library:ToggleUI()
+                                   end)
+
+                
+            end)
+
+            MainSection:NewButton(" PrisonLife  ", "Wait it for it to Pop another GUI", function(v)  
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "You Will Get Two ";
+                    Text = "GUI Scripts";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/GwnStefano/NexusHub/main/Main", true))()
+                wait(4)
+
+
+
+
+--[[
+    88""Yb  88""Yb  888888 Yb    dP    db     88  88      Yb  dP
+    88__dP  88__dP  88__    Yb  dP    dPYb    88  88       YbdP 
+    88"""   88"Yb   88""     YbdP    dP__Yb   88  88  .o   dPYb 
+    88      88  Yb  888888    YP    dP""""Yb  88  88ood8  dP  Yb  ~02hacks
+]]
+loadstring(game:HttpGet("https://pastebin.com/raw/mHfK0Xk4", true))()
+
+
+
+
+
+
+            end)
+
+            MainSection:NewButton(" Devious Lick Simulator  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet(('https://raw.githubusercontent.com/XTheMasterX/Scripts/Main/DeviousLickSimulator'),true))()
             end)
 
-            MainSection:NewButton(" TowerOfMisery Script ", "Wait it for it to Pop another GUI", function(v)  
-                --Look themes from kavo ui library docs or it automatically use sentinel theme.
---Themes is here: https://xheptcofficial.gitbook.io/kavo-library/#creating-ui-library-window
-_G.theme = "Sentinel"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/SynXenn/ui-libs/main/TowerOfMisery"))();
+            MainSection:NewButton(" Driving Empire Simulator  ", "Wait it for it to Pop another GUI", function(v)  
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/WindyKung/WindyWare/main/MainLoader.lua"))()
+            end)
+
+            MainSection:NewButton(" Tower Of Misery  ", "Wait it for it to Pop another GUI", function(v)  
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/TowerofMiseryr"))();
+            end)
+
+            MainSection:NewButton(" Tower Of HELL  ", "Wait it for it to Pop another GUI", function(v)  
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "AntiExploit Detected! ";
+                    Text = "Use ALT!";
+                    Duration = 20;
+                })
+wait (3)
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/garfield%20hub", true))()
+                            end)
+
+            MainSection:NewButton(" RagdollEngine  ", "", function(v)  
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+            end)
+
+
+            MainSection:NewButton(" RiseOfNations  ", "Wait it for it to Pop another GUI", function(v)  
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/insanedude59/RiseOfNationsGui/main/OpenSource.lua", true))()
             end)
 
             MainSection:NewButton(" Project Lazarus  ", "Wait it for it to Pop another GUI", function(v)  
@@ -575,15 +807,19 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SynXenn/ui-libs/main/
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/FOXTROXHACKS/ElToro/main/Hub.lua"))()
             end)
 
+            MainSection:NewButton(" Survive And Kill the Killers Area 51  ", "Wait it for it to Pop another GUI", function(v)  
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/Survive%20and%20Kill%20the%20Killers%2051%20in%20Area"))()
+            end)
+
             MainSection:NewButton(" Infection Inc 2  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Infection%20Inc%202.txt", true))()
             end)
 
             MainSection:NewButton(" Slap Battle's  ", "Wait it for it to Pop another GUI", function(v)  
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Bluntman420n/fucns/main/FUCKYOUCUNT.BLUNT", true))()
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/dizyhvh/slap_battles_gui/main/0.lua"))()
             end)
 
-            MainSection:NewButton(" Royal High Script ", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" Royal High  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Royal%20High%20Script.txt", true))()
                 
             end)
@@ -592,15 +828,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SynXenn/ui-libs/main/
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/KAT_-_SILENT_AIM.txt", true))()
             end)
 
-            MainSection:NewButton(" WorkAtPizzaPlace Script ", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" Work At Pizza Place  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet("https://gist.githubusercontent.com/TurkOyuncu99/bb2f1182a224999682a2d1a87aa8517a/raw/66c7791224be0434b23938ca26244238649d0143/ameicaa",true))()
             end)
 
-            MainSection:NewButton(" Money Simulator Script ", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" Money Simulator x  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
             end)
 
-            MainSection:NewButton(" Pet Simulator Auto Farm ", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" Pet Simulator x  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet('https://pastebin.com/raw/fttSzNs8'))()
             end)
 
@@ -612,7 +848,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/SynXenn/ui-libs/main/
                 loadstring(game:HttpGetAsync'https://cdn.applebee1558.com/bark/bark.lua')('thanks for bark, #barkwinning')
             end)
 
-            MainSection:NewButton(" SharkBite Script ", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" SharkBite  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/LOOF-sys/Roblox-Shit/main/SharkBite.lua",true))()
             end)
 
@@ -640,13 +876,13 @@ end
                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Xowie89/Roblox-Scripts/main/Mall%20Tycoon.lua"))()
             end)
 
-            MainSection:NewButton(" Phantom Forces Script", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" Phantom Forces ", "Wait it for it to Pop another GUI", function(v)  
                 pcall(function()
                     loadstring(game:HttpGet("https://raw.githubusercontent.com/Herrtt/Phantom-Forces-Cheat/main/Main.lua", true))()
                 end)
             end)
 
-            MainSection:NewButton(" WestBound Script  ", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" WestBound   ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Drifter0507/scripts/main/westbound"),true))()
             end)
 
@@ -654,210 +890,1947 @@ end
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
             end)
 
-            MainSection:NewButton(" Ultimate Driving Simulator Script ", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" Ultimate Driving Simulator  ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet(("https://raw.githubusercontent.com/Rogg15/autofarm/main/Ultimate%20Driving%20sim.txt"),true))()
             end)
 
-            MainSection:NewButton(" Blast Off Simulator Script  ", "Wait it for it to Pop another GUI", function(v)  
+            MainSection:NewButton(" Blast Off Simulator   ", "Wait it for it to Pop another GUI", function(v)  
                 loadstring(game:HttpGet('https://raw.githubusercontent.com/Rogg15/autofarm/main/Blast%20Off%20Simulator.txt'))()
             end)
+             
+                         
 
 
 
+        
 
 
 
+            wait(0.4)
 
 
 
 
 
+ local Main = Window:NewTab("Option's")
+ local MainSection = Main:NewSection("Warning These Client Are Banneble!")
 
 
+ MainSection:NewButton("Delete ChatLog", "Inorder to Show Rejoin.", function(v)
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/DeleteChat-1.lua", true))()
+     end)
 
+     MainSection:NewButton("Physics Gun", "Inorder to Show Rejoin.", function(v)
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Physics%20Gun.txt", true))()
+         end)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
--- MAIN
-
-
-
-local Main = Window:NewTab("Cmds")
-local MainSection = Main:NewSection("Server, Admin GUI")
-
-MainSection:NewButton("ServerFinder", "ButtonInfo", function(v)
-    loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
-    end)
-    
-    MainSection:NewButton("Fate's Admin", "ButtonInfo", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FatesAdmin",true))();
-        end)
-
-        MainSection:NewButton("Infinite Yeild", "ButtonInfo", function(v)
-            loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+         MainSection:NewButton("ToolMove", "Inorder to Show Rejoin.", function(v)
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/Fe%20tool%20mover", true))()
             end)
 
-            MainSection:NewButton("Dex v3", "ButtonInfo", function(v)
-                loadstring(game:HttpGet(('https://raw.githubusercontent.com/Rogg15/CookieLogger/main/DarkDex'),true))()
-                end)
+     MainSection:NewButton("Fake Lag", "R6 , R15", function(v)
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Fake%20Lag.txt", true))()
+         end)
 
-            MainSection:NewButton("Dex v4", "ButtonInfo", function(v)
-                loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
-                end)
+         MainSection:NewButton("Remove Roblox Settings", "ButtonInfo", function(v)
+             game.CoreGui.ThemeProvider.Enabled = false
+             end)
 
-                MainSection:NewButton("CMD X", "ButtonInfo", function(v)
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()
-                    end)
+             MainSection:NewButton("ChatBypass", "Inorder to Show Rejoin.", function(v)
+                 wait(1)
+                 game.StarterGui:SetCore("SendNotification", {
+                     Title = "WARNING USE ALT ";
+                     Text = "THIS SCRIPT IS BANNABLE";
+                     Duration = 20;
+                 })
+                 loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+                 
+                 end)
+
+                 MainSection:NewButton("ChatTranslator", "Inorder to Show Rejoin.", function(v)
+                    wait(1)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Chat_Translator_Script.txt", true))()
                     
-                    MainSection:NewButton("Remote Spy", "ButtonInfo", function(v)
-                        loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
-                        end)
+                    end)
+
+                    MainSection:NewButton("Stream Snipe", "Inorder to Show Rejoin.", function(v)
+                        wait(1)
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/streamsnipe.txt", true))()
                         
-                        MainSection:NewButton("In Game AutoClicker", "ButtonInfo", function(v)
-                            loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
-                            end)
-
-
-
-
-                    local Main = Window:NewTab("Inc")
-                    local MainSection = Main:NewSection("Works Any Game.")
-
-                    MainSection:NewButton("ChatSpy", "Inorder to Show Rejoin.", function(v)
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/spychat", true))()
                         end)
-
-                    MainSection:NewButton("Delete ChatLog", "Inorder to Show Rejoin.", function(v)
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/DeleteChat-1.lua", true))()
-                        end)
-
-                        MainSection:NewButton("Physics Gun", "Inorder to Show Rejoin.", function(v)
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Physics%20Gun.txt", true))()
+    
+                        MainSection:NewButton("Console ", "Inorder to Show Rejoin.", function(v)
+                            wait(1)
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/console.lua", true))()
                             end)
-
-                        MainSection:NewButton("Fake Lag", "R6 , R15", function(v)
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Fake%20Lag.txt", true))()
-                            end)
-
-                            MainSection:NewButton("R6 Animations", "Only R6 Games.", function(v)
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Aniamtion", true))()
+                            MainSection:NewButton(" HitBoxExpander ", "Inorder to Show Rejoin.", function(v)
+                                wait(1)
+                                loadstring(game:HttpGet("http://gameovers.net/Scripts/Free/HitboxExpander/main.lua", true))()
                                 
                                 end)
 
-                                MainSection:NewButton("R15 Animations", "Only R15 Games", function(v)
-                                    loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
-                                end)
 
-                        local MainSection = Main:NewSection(" DOSEN'T Works Any Game,Mostly R6/AntiExploit")
 
-                        MainSection:NewButton("Client Headless", "Inorder to Show Rejoin.", function(v)
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/client_headless-1.txt", true))()
+
+
+
+
+
+
+
+
+
+
+
+                            wait(0.4)
+
+
+
+
+
+
+
+
+
+                 local Main = Window:NewTab("Mics")
+                 local MainSection = Main:NewSection(" GPU Rendering , FPS , Ping Check ")
+     
+                 MainSection:NewButton("RTX Mode", "Better Graphics", function(v)
+                     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/RbxGraphicsImprover.lua"))()
+                     end)
+
+
+                     MainSection:NewButton("Low GFX", "ButtonInfo", function(v)
+                        local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+                        local g = game
+                        local w = g.Workspace
+                        local l = g.Lighting
+                        local t = w.Terrain
+                        t.WaterWaveSize = 0
+                        t.WaterWaveSpeed = 0
+                        t.WaterReflectance = 0
+                        t.WaterTransparency = 0
+                        l.GlobalShadows = false
+                        l.FogEnd = 9e9
+                        l.Brightness = 0
+                        settings().Rendering.QualityLevel = "Level01"
+                        for i, v in pairs(g:GetDescendants()) do
+                            if v:IsA("Part") or v:IsA("Union") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+                                v.Material = "Plastic"
+                                v.Reflectance = 0
+                            elseif v:IsA("Decal") or v:IsA("Texture") and decalsyeeted then
+                                v.Transparency = 1
+                            elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+                                v.Lifetime = NumberRange.new(0)
+                            elseif v:IsA("Explosion") then
+                                v.BlastPressure = 1
+                                v.BlastRadius = 1
+                            elseif v:IsA("Fire") or v:IsA("SpotLight") or v:IsA("Smoke") or v:IsA("Sparkles") then
+                                v.Enabled = false
+                            elseif v:IsA("MeshPart") then
+                                v.Material = "Plastic"
+                                v.Reflectance = 0
+                                v.TextureID = 10385902758728957
+                            end
+                        end
+                        for i, e in pairs(l:GetChildren()) do
+                            if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+                                e.Enabled = false
+                            end
+                        end
+                    
+                        end)
+
+                        MainSection:NewButton("FPS Boost", "ButtonInfo", function(v)
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Better%20FPS%20Boost"))()
                             end)
 
-                            MainSection:NewButton("Remove Roblox Settings", "ButtonInfo", function(v)
-                                game.CoreGui.ThemeProvider.Enabled = false
-                                end)
+                        MainSection:NewButton("Remove graphics", "remove's graph texture ingame", function(v)
+                            local a = game
+local b = a.Workspace
+local c = a.Lighting
+local d = b.Terrain
+d.WaterWaveSize = 0
+d.WaterWaveSpeed = 0
+d.WaterReflectance = 0
+d.WaterTransparency = 0
+c.GlobalShadows = false
+c.FogEnd = 9e9
+c.Brightness = 0
+settings().Rendering.QualityLevel = "Level01"
+for e, f in pairs(a:GetDescendants()) do
+   if f:IsA("Part") or f:IsA("Union") or f:IsA("CornerWedgePart") or f:IsA("TrussPart") then
+       f.Material = "Plastic"
+       f.Reflectance = 0
+   elseif f:IsA("Decal") or f:IsA("Texture") then
+       f.Transparency = 0
+   elseif f:IsA("ParticleEmitter") or f:IsA("Trail") then
+       f.Lifetime = NumberRange.new(0)
+   elseif f:IsA("Explosion") then
+       f.BlastPressure = 0
+       f.BlastRadius = 0
+   elseif f:IsA("Fire") or f:IsA("SpotLight") or f:IsA("Smoke") or f:IsA("Sparkles") then
+       f.Enabled = false
+   elseif f:IsA("MeshPart") then
+       f.Material = "Plastic"
+       f.Reflectance = 0
+       f.TextureID = 10385902758728957
+   end
+end
+for e, g in pairs(c:GetChildren()) do
+   if
+       g:IsA("BlurEffect") or g:IsA("SunRaysEffect") or g:IsA("ColorCorrectionEffect") or g:IsA("BloomEffect") or
+           g:IsA("DepthOfFieldEffect")
+    then
+       g.Enabled = false
+   end
+end
+sethiddenproperty(game.Lighting, "Technology", "Compatibility")
+                            end)
 
-                            MainSection:NewButton("Anti-Kick", "Omg Really legit? no.", function(v)
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Remove_kick_messsage.txt", true))()
-                                end)
+                 
+                     MainSection:NewButton("Better Performance", "ButtonInfo", function(v)
+                         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Better%20Performance"))()
+                         end)
+                 
+                 
+                         MainSection:NewButton("Better Graphics", "ButtonInfo", function(v)
+                             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Better%20Graphics"))()
+                             end)
+     
+                             MainSection:NewButton("Better Enchancer", "ButtonInfo", function(v)
+                                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Graphics%20Enhancer"))()
+                                 end)
+     
+                                 local MainSection = Main:NewSection(" Ping, FPS , Game-Status ")
 
-                                MainSection:NewButton("ChatBypass", "Inorder to Show Rejoin.", function(v)
+                             MainSection:NewButton("Game Status", "ButtonInfo", function(v)
+                                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Display_Stats.lua"))()
+                                 end)
+
+                                 MainSection:NewButton("Fps Checker", "ButtonInfo", function(v)
+                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Arth795-scripts/Luashit/main/fps"))()
+                                    end)
+     
+                                 MainSection:NewButton("Ping Checker", "ButtonInfo", function(v)
+                                     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/ping_loadstring.txt"))()
+                                     end)
+     
+                                     local MainSection = Main:NewSection(" GPU Rendering  ")
+                                     
+                                      MainSection:NewButton("GPU Rendering v1", "Version of non-laggy ", function(v)
+
+local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+
+local WindowFocusReleasedFunction = function()
+	RunService:Set3dRenderingEnabled(false)
+	setfpscap(10)
+	return
+end
+
+local WindowFocusedFunction = function()
+	RunService:Set3dRenderingEnabled(true)
+	setfpscap(360)
+	return
+end
+
+local Initialize = function()
+	UserInputService.WindowFocusReleased:Connect(WindowFocusReleasedFunction)
+	UserInputService.WindowFocused:Connect(WindowFocusedFunction)
+	return
+end
+Initialize()
+                                         end)
+
+                                     MainSection:NewButton("GPU Rendering v2", "ButtonInfo", function(v)
+                                         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Unfocused_CPU__GPU_-2.txt"))()
+                                         end)
+     
+     
+     
+                             MainSection:NewButton("GPU Render BETA", "ButtonInfo", function(v)
+                                 
+                wait(4)
+                
+                
+                
+                wait(1)
+                
+                	local message = Instance.new("Message")
+message.Parent = game.Workspace
+message.Text = "Turning GPU Saver in.."
+
+wait(4)
+                
+                
+                
+                local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+
+local WindowFocusReleasedFunction = function()
+	RunService:Set3dRenderingEnabled(false)
+	setfpscap(9)
+	return
+end
+
+local WindowFocusedFunction = function()
+	RunService:Set3dRenderingEnabled(true)
+	setfpscap(360)
+	return
+end
+
+local Initialize = function()
+	UserInputService.WindowFocusReleased:Connect(WindowFocusReleasedFunction)
+	UserInputService.WindowFocused:Connect(WindowFocusedFunction)
+	return
+end
+Initialize()
+
+
+wait(1)
+
+                    local qwertgh = Instance.new("ScreenGui")
+                    local Frame = Instance.new("Frame")
+                    qwertgh.Name = "qwertgh"
+                    qwertgh.Parent = game.CoreGui
+                    qwertgh.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+                    Frame.Parent = qwertgh
+                    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                    Frame.Position = UDim2.new(-0.34374997, 0, -0.585276067, 0)
+                    Frame.Size = UDim2.new(0, 10000, 0, 10000)
+                    annouce(player.Name.." has GPU saver on.")
+                
+                    local qwertgh = Instance.new("ScreenGui")
+                    local Frame = Instance.new("Frame")
+                    qwertgh.Name = "qwertgh"
+                    qwertgh.Parent = game.CoreGui
+                    qwertgh.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+                    
+                    
+            
+                    
+                    
+
+                    Frame.Parent = qwertgh
+                    Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+                    Frame.Position = UDim2.new(-0.34374997, 0, -0.585276067, 0)
+                    Frame.Size = UDim2.new(0, 10000, 0, 10000)
+
+
+
+
+                
+                                 end)
+
+
+
+                                 wait(0.4)
+
+
+
+                                 local Main = Window:NewTab("Cmds")
+                                 local MainSection = Main:NewSection("Server, Admin GUI")
+                                 
+                                 MainSection:NewButton("ServerFinder", "ButtonInfo", function(v)
+                                     loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
+                                     end)
+                                     
+                                     MainSection:NewButton("Fate's Admin", "ButtonInfo", function(v)
+                                         loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FatesAdmin",true))();
+                                         end)
+                                 
+                                         MainSection:NewButton("Infinite Yeild", "ButtonInfo", function(v)
+                                             loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+                                             end)
+                                 
+                                             MainSection:NewButton("Dex v3", "ButtonInfo", function(v)
+                                                 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Rogg15/CookieLogger/main/DarkDex'),true))()
+                                                 end)
+                                 
+                                             MainSection:NewButton("Dex v4", "ButtonInfo", function(v)
+                                                 loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+                                                 end)
+                                 
+                                                 MainSection:NewButton("CMD X", "ButtonInfo", function(v)
+                                                     loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()
+                                                     end)
+                                                     
+                                                     MainSection:NewButton("Remote Spy", "ButtonInfo", function(v)
+                                                         loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+                                                         end)
+                                                         
+                                                         MainSection:NewButton("In Game AutoClicker", "ButtonInfo", function(v)
+                                                             loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/JustEzpi/ROBLOX-Scripts/main/ROBLOX_AutoClicker"))()
+                                                             end)
+
+                                                             wait(0.4)
+
+
+
+   -- PLAYER
+   local Player = Window:NewTab("Local Player")
+   local MainSection = Player:NewSection("Player")
+
+   MainSection:NewSlider("Walkspeed", "Changes the walkspeed", 250, 16, function(v)
+       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+   end)
+
+   MainSection:NewSlider("Jumppower", "Changes the jumppower", 250, 50, function(v)
+       game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+   end)
+
+   MainSection:NewButton("Noclip", "Only R6 R15Games.", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/noclipgui", true))()
+    
+    end)
+
+
+
+    MainSection:NewButton("Noclip (FOR R15)", "Only R6 R15Games.", function(v)
+        for i, v in next, workspace:GetDescendants() do
+            if v:IsA("Part") or v:IsA("BasePart") and not v.Color == Color3.fromRGB(73, 84, 98) then
+                v.CanCollide = false 
+            end
+        end
+        
+        end)
+
+
+
+
+    MainSection:NewButton("Noclip (FOR R6)", "Only R6 R15Games.", function(v)
+        local noclip = true
+        char = game.Players.LocalPlayer.Character while true do 
+            if noclip == true then
+                for _,v in pairs(char:children()) do pcall(function() if v.className == "Part" then 
+                    v.CanCollide = false elseif v.ClassName == "Model"
+                        then v.Head.CanCollide = false end end) end end game:service("RunService").Stepped:wait() 
+            end
+        
+        end)
+
+   MainSection:NewButton("R6 Animations", "Only R6 Games.", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Aniamtion", true))()
+    
+    end)
+
+    MainSection:NewButton("R15 Animations", "Only R15 Games", function(v)
+        loadstring(game:HttpGet("https://gitlab.com/Tsuniox/lua-stuff/-/raw/master/R15GUI.lua"))()
+    end)
+
+
+   MainSection:NewButton("Fe Freeze Time", "Only R6 Games", function(v)
+
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20feree%20time"))()
+ end)
+
+ MainSection:NewButton("Fake Lag ", "Only R6 Games", function(v)
+
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Fake%20Lag.txt", true))()
+    end)
+
+
+
+MainSection:NewButton("Kick Your-Self", "ButtonInfo", function(v)
+    game.Players.LocalPlayer:Kick()
+end)
+
+
+MainSection:NewButton("Auto Rejoin Server", "ButtonInfo", function(v)
+    print("Rejoin On Kick Script Loaded Successfully")
+
+while true do wait()
+getgenv().rejoin = game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(Kick)
+    if Kick.Name == 'ErrorPrompt' and Kick:FindFirstChild('MessageArea') and Kick.MessageArea:FindFirstChild("ErrorFrame") then
+        game:GetService("TeleportService"):Teleport(game.PlaceId)
+    end
+end)
+end
+end)
+
+
+MainSection:NewButton("Server Hop","Joins a new server",function()
+    local Servers = game.HttpService:JSONDecode(game:HttpGet("https://games.roblox.com/v1/games/"..game.PlaceId.."/servers/Public?sortOrder=Asc&limit=100"))
+    for i,v in pairs(Servers.data) do
+        if v.playing ~= v.maxPlayers then
+            game:GetService('TeleportService'):TeleportToPlaceInstance(game.PlaceId, v.id)
+        end
+    end
+end)
+
+MainSection:NewButton("Rejoin Server", "ButtonInfo", function(v)
+    game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
+end)
+
+
+MainSection:NewButton("Auto Respawn", "It may Not Supports R15", function(v)
+	while wait() do
+	
+	
+        if game.Players.LocalPlayer.Character.Humanoid.Health <= 99.9 then
+            local location = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+            local A_1 = "\66\114\111\121\111\117\98\97\100\100"
+            local Event = game:GetService("Workspace").Remote.loadchar
+            Event:InvokeServer(A_1)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = location
+        end
+    end;
+end)
+
+
+MainSection:NewButton("Force Refresh ", "RefreshAll Scripts/Etc", function(v)
+
+    
+game:GetService('Players').LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(369.883, 46.5658, -403.938)
+
+game.Players.LocalPlayer.Character.Humanoid:Destroy()
+
+
+    end)
+
+MainSection:NewButton("Force Reset", "ButtonInfo", function(v)
+    game.Workspace.Remote.loadchar:InvokeServer(game.Players.LocalPlayer.Name)
+    end)
+
+MainSection:NewButton("Reset", "ButtonInfo", function(v)
+
+    local ctr = game.Players.LocalPlayer.Character
+    ctr.Humanoid.Health = 0
+    end)
+
+    wait(0.4)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            local Main = Window:NewTab("Fe Scripts")
+            local v1MainSection = Main:NewSection("Fe Net Bypass   ,  Fe Hub's  , Fe Script ")
+            
+            v1MainSection:NewButton("NetBreaker", "Mostly Works.", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Notification";
+                    Text = "Net Breaker";
+                    Duration = 20;
+                })
+            
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/netbreak-1.txt"))()
+            end)
+            
+            v1MainSection:NewButton("Mico's Net GUI", "Mostly Works.", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Notification";
+                    Text = "!";
+                    Duration = 20;
+                })
+            
+                loadstring(game:HttpGet('https://paste.ee/r/vXN7L'))()
+            end)
+            
+            v1MainSection:NewButton("Low Net", "Work Any Exploit", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Notification";
+                    Text = "Low Net Optimize";
+                    Duration = 20;
+                })
+            
+                    game:GetService("RunService").RenderStepped:Connect(function()
+                 sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+                    end)
+            end)
+            
+            v1MainSection:NewButton("Mid Net", "Work Any Exploit", function(v)
+                loadstring(game:HttpGet(('https://pastebin.com/raw/Cu7bKQWN'),true))()
+            end)
+            
+            v1MainSection:NewButton("Stable Net", "Only Paid Exploit", function(v)       
+                    wait(1)
+                    game.StarterGui:SetCore("SendNotification", {
+                        Title = "Paid Detected";
+                        Text = "Net Optimize";
+                        Duration = 20;
+                    })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/uhcokieloki"))()
+            end)
+            
+            local v1MainSection = Main:NewSection("  Fe Hub's ")
+            
+            v1MainSection:NewButton("Animate hub", "Stable Animate Net", function(v)       
+                loadstring(game:HttpGet(('https://raw.githubusercontent.com/bedra45/BeachHub/main/BeachAnimation'),true))()
+            end)
+            
+            v1MainSection:NewButton("DinoHub", "Shityy Hub", function(v)       
+                loadstring(game:HttpGet(('https://raw.githubusercontent.com/bedra45/BeachHub/main/BeachAnimation'),true))()
+            end)
+            
+            v1MainSection:NewButton("Pendellium Hub", "Best FE Hub", function(v)       
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V4.lua"))()
+            end)
+            
+            v1MainSection:NewButton("Pumkin Hub", "Average FE Hub", function(v)       
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/pumkinware"))()
+            end)
+            
+            v1MainSection:NewButton("Pumkin Hub", "Average FE Hub", function(v)       
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/pumkinware"))()
+            end)
+            
+            v1MainSection:NewButton("Interaxis hub", "ButtonInfo", function(v)
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/bigjohnny1234/Interaxis-hub/main/README.md"))()
+                end)
+            
+                v1MainSection:NewButton("Aspect hub", "ButtonInfo", function(v)
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Aspect%20hub.txt"))()
+                    end)
+            
+                
+            
+            
+            v1MainSection:NewButton("Syntax v2", "Best FE Hub", function(v)       
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Syntaxbesthub";
+                    Text = "Key";
+                    Duration = 999999999999999999999999999999999999999999;
+                })
+                -- Pendulum Hub V4
+            -- V2 Reborn Key is Syntaxbesthub --
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/Memeboiyot/SyntaxRebornOfficial/main/SyntaxReborn'),true))()
+            end)
+            
+            v1MainSection:NewButton("Syntax v3", "Best FE Hub", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "SyntaxV3Free";
+                    Text = "Key";
+                    Duration = 999999999999999999999999999999999999999999;
+                })
+                -- Pendulum Hub V4
+            -- V2 Reborn Key is Syntaxbesthub --
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/Memeboiyot/SyntaxRebornOfficial/main/SyntaxReborn'),true))()
+            end)
+            
+            v1MainSection:NewButton("LXHUB", "Best FE Hub", function(v)
+            
+            loadstring(game:HttpGet(('https://raw.githubusercontent.com/Gogogamer61/LXHub-Main/main/LXHub%20Main%20Script'),true))()
+            end)
+            
+            
+            
+            
+            
+            
+            
+            
+            local v1MainSection = Main:NewSection("  Fe Script ")
+
+            v1MainSection:NewButton("Fe Motorrcycle", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Need Net";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet('https://raw.githubusercontent.com/Rogg15/wl/main/Fe%20Motorcyle',true))()
+                end)
+            
+            v1MainSection:NewButton("Fe Car", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "No Need Net";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
+            end)
+            
+            v1MainSection:NewButton("Fe Dog", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Dog",true))()
+                end)
+            
+                v1MainSection:NewButton("Fe Dog Car", "Only R6 Games", function(v)
+                    wait(1)
+                    game.StarterGui:SetCore("SendNotification", {
+                        Title = "Executed!";
+                        Text = "Stable Net Required";
+                        Duration = 20;
+                    })
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Dog%20Car",true))()
+                    end)
+            
+            v1MainSection:NewButton("Fe Ai Soldier", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Stable Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Ai%20Soldier.lua"))()
+            end)
+            
+            v1MainSection:NewButton("Fe Combine Soldier", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Soldier.txt"))()
+                end)
+            
+            v1MainSection:NewButton("Fe Ball", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Only R6 , R15";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Ball.lua"))()
+            end)
+            v1MainSection:NewButton("Fe Hamster Ball", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Only R6 , R15";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/FE%20hamster%20ball"))()
+                end)
+            
+            v1MainSection:NewButton("Fe Fallen Anger", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Stable Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Fallen%20Anger.lua"))()
+            end)
+            
+            v1MainSection:NewButton("Fe Ender", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Mid Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Ender.txt"))()
+                end)
+
+                v1MainSection:NewButton("Fe Enderv2", "Only R6 Games", function(v)
+                    wait(1)
+                    game.StarterGui:SetCore("SendNotification", {
+                        Title = "Executed!";
+                        Text = "Mid Net Required";
+                        Duration = 20;
+                    })
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/Ender%20v2"))()
+                    end)
+            
+            
+            v1MainSection:NewButton("Fe Rave", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Rave%20thingy.lua"))()
+                end)
+                
+                v1MainSection:NewButton("Fe BigHead", "Only R6 Games", function(v)
+                    wait(1)
+                    game.StarterGui:SetCore("SendNotification", {
+                        Title = "Not Works on R6";
+                        Text = "Only R15";
+                        Duration = 20;
+                    })
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20big%20Head.lua"))()
+                    end)
+            
+                    v1MainSection:NewButton("Fe Sonice", "Only R6 Games", function(v)
+                        wait(1)
+                        game.StarterGui:SetCore("SendNotification", {
+                            Title = "Executed!";
+                            Text = "Stable/Max Net Required";
+                            Duration = 20;
+                        })
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20sonic.txt"))()
+                        end)
+            
+                        v1MainSection:NewButton("Fe Neko", "Only R6 Games", function(v)
+                            wait(1)
+                            game.StarterGui:SetCore("SendNotification", {
+                                Title = "Executed!";
+                                Text = "Max Net Required";
+                                Duration = 20;
+                            })
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20neko.txt"))()
+                            end)
+            
+                            v1MainSection:NewButton("Fe Rainbow", "Only R6 Games", function(v)
+                                wait(1)
+                                game.StarterGui:SetCore("SendNotification", {
+                                    Title = "Executed!";
+                                    Text = "Stable/Max Net Required";
+                                    Duration = 20;
+                                })
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/FE%20raindbow"))()
+                                end)
+            
+                                v1MainSection:NewButton("Fe Big BBs", "Only R6 Games", function(v)
                                     wait(1)
                                     game.StarterGui:SetCore("SendNotification", {
-                                        Title = "WARNING USE ALT ";
-                                        Text = "THIS SCRIPT IS BANNABLE";
+                                        Title = "Executed!";
+                                        Text = "Stable/Max Net Required";
                                         Duration = 20;
                                     })
-                                    wait(3)
-                                    loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
-                                    
+                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Big%20Bbs"))()
                                     end)
-
-                            MainSection:NewButton("Client Korblox", "Inorder to Show Rejoin.", function(v)
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/client_korblox-1.txt", true))()
+            
+                                    v1MainSection:NewButton("Fe AmoungUs", "Only R6 Games", function(v)
+                                        wait(1)
+                                        game.StarterGui:SetCore("SendNotification", {
+                                            Title = "Executed!";
+                                            Text = "Stable/Max Net Required";
+                                            Duration = 20;
+                                        })
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Amoug%20us"))()
+                                        end)
+            
+                            v1MainSection:NewButton("Fe NerverSwitcher", "Only R6 Games", function(v)
+                                wait(1)
+                                game.StarterGui:SetCore("SendNotification", {
+                                    Title = "Executed!";
+                                    Text = "Stable Net Required";
+                                    Duration = 20;
+                                })
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Nevers%20Switcher.txt"))()
                                 end)
-
-                                MainSection:NewButton("AntiLog", "Ignore Bannable ChatSysmtem", function(v)
-                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Anti_Chat_Log-1.txt"))()
+            
+                                v1MainSection:NewButton("Fe Minigun", "Only R6 Games", function(v)
+                                    wait(1)
+                                    game.StarterGui:SetCore("SendNotification", {
+                                        Title = "Executed!";
+                                        Text = "Stable Net Required";
+                                        Duration = 20;
+                                    })
+                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Minigun"))()
+                                    end)
+            
+                                    v1MainSection:NewButton("Fe Glitcher", "Only R6 Games", function(v)
+                                        wait(1)
+                                        game.StarterGui:SetCore("SendNotification", {
+                                            Title = "Executed!";
+                                            Text = "Stable Net Required";
+                                            Duration = 20;
+                                        })
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Glitcher"))()
+                                        end)
+            
+                                        v1MainSection:NewButton("Fe Glitcher v2", "Only R6 Games", function(v)
+                                            wait(1)
+                                            game.StarterGui:SetCore("SendNotification", {
+                                                Title = "Executed!";
+                                                Text = "Stable Net Required";
+                                                Duration = 20;
+                                            })
+                                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Glitcher%20v2"))()
+                                            end)
+            
+                                            v1MainSection:NewButton("Fe Glitcher v3", "Only R6 Games", function(v)
+                                                wait(1)
+                                                game.StarterGui:SetCore("SendNotification", {
+                                                    Title = "Executed!";
+                                                    Text = "Stable Net Required";
+                                                    Duration = 20;
+                                                })
+                                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Glitcher%20v3"))()
+                                                end)
+            
+                                                v1MainSection:NewButton("Fe Glitcher v4", "Only R6 Games", function(v)
+                                                    wait(1)
+                                                    game.StarterGui:SetCore("SendNotification", {
+                                                        Title = "Executed!";
+                                                        Text = "Stable Net Required";
+                                                        Duration = 20;
+                                                    })
+                                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Glitcher%20v4"))()
+                                                    end)
+                
+            
+                                                    v1MainSection:NewButton("Fe Shadow Blade", "Only R6 Games", function(v)
+                                                        wait(1)
+                                                        game.StarterGui:SetCore("SendNotification", {
+                                                            Title = "Executed!";
+                                                            Text = "Stable Net Required";
+                                                            Duration = 20;
+                                                        })
+                                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Shadow%20Blade"))()
+                                                        end)
+            
+                                    v1MainSection:NewButton("Fe Neptune RB Sword", "Only R6 Games", function(v)
+                                        wait(1)
+                                        game.StarterGui:SetCore("SendNotification", {
+                                            Title = "Executed!";
+                                            Text = "Stable Net Required";
+                                            Duration = 20;
+                                        })
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/rb%20sword"))()
+                                        end)
+            
+                                v1MainSection:NewButton("Fe Neptune V3", "Only R6 Games", function(v)
+                                    wait(1)
+                                    game.StarterGui:SetCore("SendNotification", {
+                                        Title = "Executed!";
+                                        Text = "Stable Net Required";
+                                        Duration = 20;
+                                    })
+                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Neptune_V_Switcher.txt"))()
                                     end)
 
+                                    v1MainSection:NewButton("Fe SeatBreaker", "Only R6 Games", function(v)
+                                        wait(1)
+                                        game.StarterGui:SetCore("SendNotification", {
+                                            Title = "Executed!";
+                                            Text = "";
+                                            Duration = 20;
+                                        })
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/Fe_Seat_Breaker.txt"))()
+                                        end)
+
+                                        v1MainSection:NewButton("Fe Earrape", "Only R6 Games", function(v)
+                                            wait(1)
+                                            game.StarterGui:SetCore("SendNotification", {
+                                                Title = "Executed!";
+                                                Text = "This Script is Annoying.";
+                                                Duration = 20;
+                                            })
+                                            wait(2)
+                                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/FE_earrape.lua"))()
+                                            end)
+
+                                            v1MainSection:NewButton("Fe Killer v2", "Only R6 Games", function(v)
+                                                wait(1)
+                                                game.StarterGui:SetCore("SendNotification", {
+                                                    Title = "Executed!";
+                                                    Text = "Execute Pendulium Hub First!";
+                                                    Duration = 20;
+                                                })
+                                                wait(5)
+                                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/FE_earrape.lua"))()
+                                                end)
+            
+                                    v1MainSection:NewButton("Fe Pen", "Only R6 Games", function(v)
+                                        wait(1)
+                                        game.StarterGui:SetCore("SendNotification", {
+                                            Title = "Executed!";
+                                            Text = "Stable Net Required";
+                                            Duration = 20;
+                                        })
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20pen"))()
+                                        end)
+
+                                        v1MainSection:NewButton("Fe Slasher", "Only R6 Games", function(v)
+                                            wait(1)
+                                            game.StarterGui:SetCore("SendNotification", {
+                                                Title = "Executed!";
+                                                Text = "Stable Net Required";
+                                                Duration = 20;
+                                            })
+                                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Slasher"))()
+                                            end)
+            
+                                            v1MainSection:NewButton("Fe Scythe", "Only R6 Games", function(v)
+                                                wait(1)
+                                                game.StarterGui:SetCore("SendNotification", {
+                                                    Title = "Executed!";
+                                                    Text = "Stable Net Required";
+                                                    Duration = 20;
+                                                })
+                                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Scythe"))()
+                                                end)
+            
+                            v1MainSection:NewButton("Fe KrystalDance", "Only R6 Games", function(v)
+                                wait(1)
+                                game.StarterGui:SetCore("SendNotification", {
+                                    Title = "Executed!";
+                                    Text = "Mid/Stable Net Required";
+                                    Duration = 20;
+                                })
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20krystal%20dance.txt"))()
+                                end)
+            
+                                v1MainSection:NewButton("Fe Killer", "Only R6 Games", function(v)
+                                    wait(1)
+                                    game.StarterGui:SetCore("SendNotification", {
+                                        Title = "Executed!";
+                                        Text = "Mid/Stable Net Required";
+                                        Duration = 20;
+                                    })
+                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Killer.txt"))()
+                                    end)
+            
+                                    v1MainSection:NewButton("Fe Flip", "Only R6 Games", function(v)
+                                        wait(1)
+                                        game.StarterGui:SetCore("SendNotification", {
+                                            Title = "Executed!";
+                                            Text = "R6 Required";
+                                            Duration = 20;
+                                        })
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20Flip"))()
+                                        end)
+            
+                                        v1MainSection:NewButton("Fe SkateBoard", "Only R6 Games", function(v)
+                                            wait(1)
+                                            game.StarterGui:SetCore("SendNotification", {
+                                                Title = "Executed!";
+                                                Text = "Mid/Stable Net Required";
+                                                Duration = 20;
+                                            })
+                                            loadstring(game:HttpGet("https://pastebin.com/raw/XAXCaupJ"))()
+                                            end)
+            
+            
+            
+                                v1MainSection:NewButton("Fe Caducus", "Only R6 Games", function(v)
+                                    wait(1)
+                                    game.StarterGui:SetCore("SendNotification", {
+                                        Title = "Executed!";
+                                        Text = "Mid/Stable Net Required";
+                                        Duration = 20;
+                                    })
+                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20caducus%20or%20somen.txt"))()
+                                    end)
+            
+                                    v1MainSection:NewButton("Fe Xester v2", "Only R6 Games", function(v)
+                                        wait(1)
+                                        game.StarterGui:SetCore("SendNotification", {
+                                            Title = "Executed!";
+                                            Text = "Press F ;)";
+                                            Duration = 20;
+                                        })
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20caducus%20or%20somen.txt"))()
+                                        end)                
+            
+                    v1MainSection:NewButton("Fe Rave", "Only R6 Games", function(v)
+                        wait(1)
+                        game.StarterGui:SetCore("SendNotification", {
+                            Title = "Executed!";
+                            Text = "Mid/Stable Net Required";
+                            Duration = 20;
+                        })
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20big%20Head.lua"))()
+                        end)
+            
+            
+            v1MainSection:NewButton("Fe Pacifist", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Stable Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Pacifist.txt"))()
+            end)
+            
+            v1MainSection:NewButton("Fe Gale Fighter", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Gale%20fighter"))()
+                end)
+            
+            v1MainSection:NewButton("Fe Paluse Gun", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Paluse%20Gun"))()
+                end)
+            
+                v1MainSection:NewButton("Fe Aiju LoveTrap Rifle", "Only R6 Games", function(v)
+                    wait(1)
+                   game.StarterGui:SetCore("SendNotification", {
+                   Title = "Executed!";
+                    Text = "Stable Net Required";
+                 Duration = 20;
+                 })
+                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Aiju%20Love%20Trap%20Rifle"))()
+                 end) 
+            
+            
+            v1MainSection:NewButton("Fe Gun-Type34", "Type34 Hat ,  Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Stable Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20gun%20(broken%20fling).lua"))()
+            end)
+            
+            v1MainSection:NewButton("Fe Sniper-Gun", "Sniper Hat , Still Broken", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Stable Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Gun%20(%20sniper%20mode%20).lua"))()
+            end)
+            
+            v1MainSection:NewButton("Fe AR-15", "Sniper Hat , Still Broken", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20AR-15"))()
+                end)
+            
+            v1MainSection:NewButton("Fe Ellio Gun ", "Ellio blasio Hat ,  Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Ellio%20Blasio%20v2"))()
+                end)
+            
+            v1MainSection:NewButton("Fe Punch", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Go Punch SomePeople";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20punch.lua"))()
+            end)
+            
+            v1MainSection:NewButton("Fe Mouse Fling", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Click To Fling";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/mouse%20fling"))()
+            end)
+            
+            v1MainSection:NewButton("Fe Head Fling", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Click To Fling";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Head%20Fling.txt"))()
+                end)
+                
+            
+            v1MainSection:NewButton("Fe LightningCanon", "Railgun Hat", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Stable Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Lightning%20Canon.txt"))()
+            end)
+            
+            v1MainSection:NewButton("Fe LightningCanonv2", "Rpg Hat , Smoother execution", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Stable Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Lightning%20Canon%20(%20Rpg%20%2C%20Smoother%20).txt"))()
+            end)
+
+            v1MainSection:NewButton("Fe Zen", "", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/fe%20zen"))()
+                end)
+
+                v1MainSection:NewButton("Fe Scp", " ", function(v)
+                    wait(1)
+                    game.StarterGui:SetCore("SendNotification", {
+                        Title = "Executed!";
+                        Text = "Stable Net Required";
+                        Duration = 20;
+                    })
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/fe%20scp"))()
+                    end)
+
+                    v1MainSection:NewButton("Fe Cop", " ", function(v)
+                        wait(1)
+                        game.StarterGui:SetCore("SendNotification", {
+                            Title = "Executed!";
+                            Text = "Stable Net Required";
+                            Duration = 20;
+                        })
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/fe%20cop"))()
+                        end)
+            
+            
+            v1MainSection:NewButton("Fe WalkOnWalls", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20WalkOnWalls.txt"))()
+            end)
+
+            v1MainSection:NewButton("Fe HoverBoard", "Only R6 Games", function(v)
+                wait(1)
+-- FE Hoverboard
+--[[ 
+Hats required :
+2646473721 - Roblox Visor https://www.roblox.com/catalog/2646473721/Roblox-Visor
+376526673 - Stylish Aviators https://www.roblox.com/catalog/376526673/Stylish-Aviators
+376527500 - Orange Shades https://www.roblox.com/catalog/376527500/Orange-Shades
+]]
+loadstring(game:GetObjects('rbxassetid://7339698872')[1].Source)()
+                end)
+            
+            v1MainSection:NewButton("Fe Glide", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Mid/Stable Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Glide%20(%20sword%20edit%20).lua"))()
+            end)
+            
+            v1MainSection:NewButton("Fe Godzstuctor", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Mid/Stable Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20GodZSTRUCTOR.lua"))()
+            end)
+            
+            v1MainSection:NewButton("Fe VR ", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Mid/Stable/Max Net Required";
+                Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20vr%20headset.lua"))()
+            end)
+            
+            v1MainSection:NewButton("Fe Vr v2", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Low/Mid/Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/VR%20MODE%20V2"))()
+                end) 
+            
+            v1MainSection:NewButton("Fe Distracted", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20distracted.txt"))()
+                end)
+            
+                v1MainSection:NewButton("Fe Abyss", "Only R6 Games", function(v)
+                    wait(1)
+                    game.StarterGui:SetCore("SendNotification", {
+                        Title = "Executed!";
+                        Text = "Mid/Stable Net Required";
+                        Duration = 20;
+                    })
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Abyss.txt"))()
+                    end)
+            
+                    v1MainSection:NewButton("Fe Billy", "Only R6 Games", function(v)
+                        wait(1)
+                        game.StarterGui:SetCore("SendNotification", {
+                            Title = "Executed!";
+                            Text = "Mid Net Required";
+                            Duration = 20;
+                        })
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Billy.txt"))()
+                        end)
+            
+                        v1MainSection:NewButton("Fe Boombox", "Only R6 Games", function(v)
+                            wait(1)
+                            game.StarterGui:SetCore("SendNotification", {
+                                Title = "Executed!";
+                                Text = "Stable Net Required";
+                                Duration = 20;
+                            })
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Boombox.txt"))()
+                            end)
+            
+                            v1MainSection:NewButton("Fe Grab Claw", "Only R6 Games", function(v)
+                                wait(1)
+                                game.StarterGui:SetCore("SendNotification", {
+                                    Title = "Executed!";
+                                    Text = "Stable Net Required";
+                                    Duration = 20;
+                                })
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Grab%20Claw.txt"))()
+                                end)
+            
+                                v1MainSection:NewButton("Fe Cursed Spider", "Only R6 Games", function(v)
+                                    wait(1)
+                                    game.StarterGui:SetCore("SendNotification", {
+                                        Title = "Executed!";
+                                        Text = "Stable Net Required";
+                                        Duration = 20;
+                                    })
+                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Cursed%20Spider.txt"))()
+                                    end)
+            
+                                    v1MainSection:NewButton("Fe Invisiblity", "Only R6 Games", function(v)
+                                        wait(1)
+                                        game.StarterGui:SetCore("SendNotification", {
+                                            Title = "Executed!";
+                                            Text = "Stable Net Required";
+                                            Duration = 20;
+                                        })
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Invisiblity.txt"))()
+                                        end)    
+            
+                                        v1MainSection:NewButton("Fe Nullion", "Only R6 Games", function(v)
+                                            wait(1)
+                                            game.StarterGui:SetCore("SendNotification", {
+                                                Title = "Executed!";
+                                                Text = "Stable Net Required";
+                                                Duration = 20;
+                                            })
+                                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Nullioner.txt"))()
+                                            end) 
+            
+                                            v1MainSection:NewButton("Fe IronMan", "Only R6 Games", function(v)
+                                                wait(1)
+                                                game.StarterGui:SetCore("SendNotification", {
+                                                    Title = "Executed!";
+                                                    Text = "Stable Net Required";
+                                                    Duration = 20;
+                                                })
+                                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Ironman%20Suit.txt"))()
+                                                end) 
+            
+                                                v1MainSection:NewButton("Fe SucideRagdoll", "Only R6 Games", function(v)
+                                                    wait(1)
+                                                    game.StarterGui:SetCore("SendNotification", {
+                                                        Title = "Executed!";
+                                                        Text = "Stable Net Required";
+                                                        Duration = 20;
+                                                    })
+                                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Sucide%20Ragdoll.txt"))()
+                                                    end) 
+            
+                                                    v1MainSection:NewButton("Fe Finger v2", "Only R6 Games", function(v)
+                                                        wait(1)
+                                                        game.StarterGui:SetCore("SendNotification", {
+                                                            Title = "Executed!";
+                                                            Text = "Stable Net Required";
+                                                            Duration = 20;
+                                                        })
+                                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Finger%20V2.txt"))()
+                                                        end) 
+            
+            
+                                                            v1MainSection:NewButton("Fe Physics Gun", "Only R6 Games", function(v)
+                                                                wait(1)
+                                                                game.StarterGui:SetCore("SendNotification", {
+                                                                    Title = "Executed!";
+                                                                    Text = "Stable Net Required";
+                                                                    Duration = 20;
+                                                                })
+                                                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Physics%20Gun.txt"))()
+                                                                end) 
+            
+            
+             v1MainSection:NewButton("Fe Hacker", "Only R6 Games", function(v)
+            wait(1)
+            game.StarterGui:SetCore("SendNotification", {
+            Title = "Executed!";
+            Text = "Stable Net Required";
+            Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Hacker"))()
+            end)
+            
+            v1MainSection:NewButton("Fe Server Admin", "Only R6 Games", function(v)
+                wait(1)
+                game.StarterGui:SetCore("SendNotification", {
+                Title = "Executed!";
+                Text = "Stable Net Required";
+                Duration = 20;
+                })
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
+                end) 
+                
+                v1MainSection:NewButton("Fe Chara", "Only R6 Games", function(v)
+                    wait(1)
+                    game.StarterGui:SetCore("SendNotification", {
+                    Title = "Executed!";
+                    Text = "Stable Net Required";
+                    Duration = 20;
+                    })
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Chara"))()
+                    end) 
 
 
-                local Main = Window:NewTab("Flings")
+
+                    v1MainSection:NewButton("Fe FakeLag", "Only R6 Games", function(v)
+                        wait(1)
+                        game.StarterGui:SetCore("SendNotification", {
+                        Title = "Executed!";
+                        Duration = 20;
+                        })
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Fake%20Lag.txt", true))()
+                        end) 
+
+            
+                    v1MainSection:NewButton("Fe Eye Ball", "Only R6 Games", function(v)
+                        wait(1)
+                        game.StarterGui:SetCore("SendNotification", {
+                        Title = "Executed!";
+                        Text = "Stable Net Required";
+                        Duration = 20;
+                        })
+                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Eye"))()
+                        end) 
+            
+                        v1MainSection:NewButton("Fe Sans", "Only R6 Games", function(v)
+                            wait(1)
+                            game.StarterGui:SetCore("SendNotification", {
+                            Title = "Executed!";
+                            Text = "Stable Net Required";
+                            Duration = 20;
+                            })
+                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Sans"))()
+                            end) 
+            
+                            v1MainSection:NewButton("Fe Song", "Only R6 Games", function(v)
+                                wait(1)
+                                game.StarterGui:SetCore("SendNotification", {
+                                Title = "Executed!";
+                                Text = "Stable Net Required";
+                                Duration = 20;
+                                })
+                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Song"))()
+                                end) 
+            
+                                v1MainSection:NewButton("Fe Memer", "Only R6 Games", function(v)
+                                    wait(1)
+                                    game.StarterGui:SetCore("SendNotification", {
+                                    Title = "Executed!";
+                                    Text = "Stable Net Required";
+                                    Duration = 20;
+                                    })
+                                    loadstring(game:HttpGetAsync("https://pastebin.com/raw/2MSTmKBa"))()
+                                    end) 
+            
+            
+                                v1MainSection:NewButton("Fe Part Inspect", "Only R6 Games", function(v)
+                                    wait(1)
+                                    game.StarterGui:SetCore("SendNotification", {
+                                    Title = "Executed!";
+                                    Text = "Stable Net Required";
+                                    Duration = 20;
+                                    })
+                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Part%20inspect"))()
+                                    end) 
+            
+                                    v1MainSection:NewButton("Fe Headless", "Only R6 Games", function(v)
+                                        wait(1)
+                                        game.StarterGui:SetCore("SendNotification", {
+                                        Title = "Executed!";
+                                        Text = "Stable Net Required";
+                                        Duration = 20;
+                                        })
+                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Headless"))()
+                                        end) 
+            
+                                        v1MainSection:NewButton("Fe Creature", "Only R6 Games", function(v)
+                                            wait(1)
+                                            game.StarterGui:SetCore("SendNotification", {
+                                            Title = "Executed!";
+                                            Text = "Stable Net Required";
+                                            Duration = 20;
+                                            })
+                                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Creature"))()
+                                            end) 
+            
+                                            v1MainSection:NewButton("Fe Guts", "Only R6 Games", function(v)
+                                                wait(1)
+                                                game.StarterGui:SetCore("SendNotification", {
+                                                Title = "Executed!";
+                                                Text = "Stable Net Required";
+                                                Duration = 20;
+                                                })
+                                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Guts"))()
+                                                end) 
+            
+                                                v1MainSection:NewButton("Fe FlameThrower", "Only R6 Games", function(v)
+                                                    wait(1)
+                                                    game.StarterGui:SetCore("SendNotification", {
+                                                    Title = "Executed!";
+                                                    Text = "Stable Net Required";
+                                                    Duration = 20;
+                                                    })
+                                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Flamethrower"))()
+                                                    end) 
+            
+                                                    v1MainSection:NewButton("Fe Head Pet", "Only R6 Games", function(v)
+                                                        wait(1)
+                                                        game.StarterGui:SetCore("SendNotification", {
+                                                        Title = "Executed!";
+                                                        Text = "Stable Net Required";
+                                                        Duration = 20;
+                                                        })
+                                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Head%20Pet"))()
+                                                        end) 
+            
+                                                        v1MainSection:NewButton("Fe Spiderman", "R6 R15", function(v)
+                                                            wait(1)
+                                                            game.StarterGui:SetCore("SendNotification", {
+                                                            Title = "Executed!";
+                                                            Text = "Stable Net Required";
+                                                            Duration = 20;
+                                                            })
+                                                            loadstring(game:HttpGet(('https://raw.githubusercontent.com/ItsDishan/SpidermanScript/main/Spider-Man%20V1.0'), true))()
+                                                            end)
+            
+                                                            v1MainSection:NewButton("Fe ToolAnimator", "R6 R15", function(v)
+                                                                wait(1)
+                                                                game.StarterGui:SetCore("SendNotification", {
+                                                                Title = "Executed!";
+                                                                Text = "Stable Net Required";
+                                                                Duration = 20;
+                                                                })
+                                                                loadstring(game:HttpGet(('https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Tool%20Animator'), true))()
+                                                                end) 
+            
+            
+                                                                v1MainSection:NewButton("Fe BookReader", "Only R6 Games", function(v)
+                                                                    wait(1)
+                                                                    game.StarterGui:SetCore("SendNotification", {
+                                                                    Title = "Executed!";
+                                                                    Text = "Stable Net Required";
+                                                                    Duration = 20;
+                                                                    })
+                                                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Book%20Reader"))()
+                                                                    end) 
+            
+            
+                                                                    v1MainSection:NewButton("Fe Table", "Only R6 Games", function(v)
+                                                                        wait(1)
+                                                                        game.StarterGui:SetCore("SendNotification", {
+                                                                        Title = "Executed!";
+                                                                        Text = "Stable Net Required";
+                                                                        Duration = 20;
+                                                                        })
+                                                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20table"))()
+                                                                        end) 
+            
+            
+              v1MainSection:NewButton("Fe Wall", "Only R6 Games", function(v)
+               wait(1)
+              game.StarterGui:SetCore("SendNotification", {
+              Title = "Executed!";
+               Text = "Stable Net Required";
+            Duration = 20;
+            })
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Wall"))()
+            end) 
+            
+            v1MainSection:NewButton("Fe Pyramind", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Pyramind"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Long Legs", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Long%20legs"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Chair", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Chair"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Invisible", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Invisible%20v2"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe BlackHole", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20black%20hole"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Stand", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Stand"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe UFO", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20UFO"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe UFO(free version)", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20UFO%20v2"))()
+             end)
+            
+             v1MainSection:NewButton("Fe Wing", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Wing"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Eye", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Eye1"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe ClassicAnimation", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Classical%20Animation"))()
+             end) 
+            
+            
+             v1MainSection:NewButton("Fe Galaxy Sword", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet(('https://raw.githubusercontent.com/Azetax/script-for-roblox/main/OP'),true))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Smile", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Mid/Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Smile"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe R15 Tallman", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://github.com/Rogg15/CookieLogger/blob/main/Fe%20Tall%20man"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe R6 Breakdance", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Wait.";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/FE%20breakdance%20r6"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe R15 Breakdance", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Mid/Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://github.com/Rogg15/CookieLogger/blob/main/Fe%20breakdance%20r15"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Teleport Universal", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Warning antiban may dedected";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Achromatic (free version)", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Mid/Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Achromatic"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe PopCat", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "Mid/Stable Net Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Popcat"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Smalify", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "R15 Required";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20smalify"))()
+             end) 
+            
+             v1MainSection:NewButton("Fe Freeze Time", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20feree%20time"))()
+             end)
+            
+             v1MainSection:NewButton("Fe helicopter", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20helicope"))()
+             end)
+            
+             v1MainSection:NewButton("Fe Ban Hammer", "Only R6 Games", function(v)
+                wait(1)
+               game.StarterGui:SetCore("SendNotification", {
+               Title = "Executed!";
+                Text = "";
+             Duration = 20;
+             })
+             loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20helicope"))()
+             end)
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+
+
+                  
+
+
+
+             wait(0.4)
+                                    
+                                    
+                                    
+                                    
+                                    
+
+                local Main = Window:NewTab("Fling GUI's")
                 local MainSection = Main:NewSection("Fling , R6 , R15")
 
                 MainSection:NewButton("AntiFling", "R6", function(v)
@@ -893,18 +2866,15 @@ MainSection:NewButton("ServerFinder", "ButtonInfo", function(v)
                             MainSection:NewButton("Target Fling ", "Works on  R6 , R15", function(v)
                                 loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Target%20GUI.txt", true))()
                                 end)
-                                MainSection:NewButton("Force Reset", "ButtonInfo", function(v)
-                                    local ctr = game.Players.LocalPlayer.Character
-                                    ctr.Humanoid.Health = 0
-                                    end)
         
-                                    MainSection:NewButton("Fling w Fly mode", "EXECUTE FLY FIRST!", function(v)
+                                    MainSection:NewButton("Fling", "EXECUTE FLY FIRST!", function(v)
                                         wait(1)
 game.StarterGui:SetCore("SendNotification", {
     Title = "Must Execute!";
     Text = "FLY MODE";
     Duration = 20;
 })
+wait(2)
                                         power = 7000 -- change this to make it more or less powerful
 
                                         game:GetService('RunService').Stepped:connect(function()
@@ -1011,1126 +2981,288 @@ game.StarterGui:SetCore("SendNotification", {
 
 
 
-            local Main = Window:NewTab("Mics")
-            local MainSection = Main:NewSection(" GPU Rendering , FPS , Ping Check ")
-
-            MainSection:NewButton("RTX Mode", "Better Graphics", function(v)
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/RbxGraphicsImprover.lua"))()
-                end)
-            
-            MainSection:NewButton("Low GFX Mode", "ButtonInfo", function(v)
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Better%20FPS%20Boost"))()
-                end)
-            
-                MainSection:NewButton("Better Performance", "ButtonInfo", function(v)
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Better%20Performance"))()
-                    end)
-            
-            
-                    MainSection:NewButton("Better Graphics", "ButtonInfo", function(v)
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Better%20Graphics"))()
-                        end)
-
-                        MainSection:NewButton("Better Enchancer", "ButtonInfo", function(v)
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Graphics%20Enhancer"))()
-                            end)
-
-                        MainSection:NewButton("Display Status", "ButtonInfo", function(v)
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Display_Stats.lua"))()
-                            end)
-
-                            MainSection:NewButton("Ping Checker", "ButtonInfo", function(v)
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/ping_loadstring.txt"))()
-                                end)
-
-                                MainSection:NewButton("GPU Rendering", "ButtonInfo", function(v)
-                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Unfocused_CPU__GPU_-2.txt"))()
-                                    end)
-
-
-
-                        MainSection:NewButton("GPU Render", "ButtonInfo", function(v)
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Better%20Graphics"))()
-                            end)
-
-             
-                         
-
-
-
-            
 
 
 
 
 
 
-local Main = Window:NewTab("Fe Scripts")
-local v1MainSection = Main:NewSection("Fe Net Bypass   ,  Fe Hub's  , Fe Script ")
 
-v1MainSection:NewButton("NetBreaker", "Mostly Works.", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Notification";
-        Text = "Net Breaker";
-        Duration = 20;
-    })
 
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/netbreak-1.txt"))()
-end)
 
-v1MainSection:NewButton("Mico's Net GUI", "Mostly Works.", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Notification";
-        Text = "!";
-        Duration = 20;
-    })
 
-    loadstring(game:HttpGet('https://paste.ee/r/vXN7L'))()
-end)
 
-v1MainSection:NewButton("Low Net", "Work Any Exploit", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Notification";
-        Text = "Low Net Optimize";
-        Duration = 20;
-    })
 
-        game:GetService("RunService").RenderStepped:Connect(function()
-     sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
-        end)
-end)
 
-v1MainSection:NewButton("Mid Net", "Work Any Exploit", function(v)
-    loadstring(game:HttpGet(('https://pastebin.com/raw/Cu7bKQWN'),true))()
-end)
 
-v1MainSection:NewButton("Stable Net", "Only Paid Exploit", function(v)       
-        wait(1)
-        game.StarterGui:SetCore("SendNotification", {
-            Title = "Paid Detected";
-            Text = "Net Optimize";
-            Duration = 20;
-        })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/uhcokieloki"))()
-end)
 
-local v1MainSection = Main:NewSection("  Fe Hub's ")
 
-v1MainSection:NewButton("Animate hub", "Stable Animate Net", function(v)       
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/bedra45/BeachHub/main/BeachAnimation'),true))()
-end)
 
-v1MainSection:NewButton("DinoHub", "Shityy Hub", function(v)       
-    loadstring(game:HttpGet(('https://raw.githubusercontent.com/bedra45/BeachHub/main/BeachAnimation'),true))()
-end)
 
-v1MainSection:NewButton("Pendellium Hub", "Best FE Hub", function(v)       
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V4.lua"))()
-end)
 
-v1MainSection:NewButton("Pumkin Hub", "Average FE Hub", function(v)       
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/pumkinware"))()
-end)
 
-v1MainSection:NewButton("Pumkin Hub", "Average FE Hub", function(v)       
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/pumkinware"))()
-end)
 
-v1MainSection:NewButton("Interaxis hub", "ButtonInfo", function(v)
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/bigjohnny1234/Interaxis-hub/main/README.md"))()
+
+
+
+
+
+
+
+
+                                    wait(0.4)
+
+
+
+local Main = Window:NewTab("Visual")
+local MainSection = Main:NewSection("  Client's Scripts ")
+
+
+MainSection:NewButton("Fullbright", "", function(v)
+	game:GetService("Lighting").FogEnd = 100000
+	for i,v in pairs(game:GetService("Lighting"):GetDescendants()) do
+		if v:IsA("Atmosphere") then
+			v:Destroy()
+		end
+	end
     end)
 
-    v1MainSection:NewButton("Aspect hub", "ButtonInfo", function(v)
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Aspect%20hub.txt"))()
+
+
+    MainSection:NewButton("Brightness", "", function(v)
+        game:GetService("Lighting").Brightness = args[1]
         end)
 
-    
 
-
-v1MainSection:NewButton("Syntax v2", "Best FE Hub", function(v)       
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Syntaxbesthub";
-        Text = "Key";
-        Duration = 999999999999999999999999999999999999999999;
-    })
-    -- Pendulum Hub V4
--- V2 Reborn Key is Syntaxbesthub --
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Memeboiyot/SyntaxRebornOfficial/main/SyntaxReborn'),true))()
-end)
-
-v1MainSection:NewButton("Syntax v3", "Best FE Hub", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "SyntaxV3Free";
-        Text = "Key";
-        Duration = 999999999999999999999999999999999999999999;
-    })
-    -- Pendulum Hub V4
--- V2 Reborn Key is Syntaxbesthub --
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Memeboiyot/SyntaxRebornOfficial/main/SyntaxReborn'),true))()
-end)
-
-v1MainSection:NewButton("LXHUB", "Best FE Hub", function(v)
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Gogogamer61/LXHub-Main/main/LXHub%20Main%20Script'),true))()
-end)
-
-
-
-
-
-
-
-
-local v1MainSection = Main:NewSection("  Fe Script ")
-
-v1MainSection:NewButton("Fe Car", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Not Need Net";
-    Duration = 20;
-})
-loadstring(game:HttpGet('https://raw.githubusercontent.com/MonkoTubeYT/carscript/master/!carscript.lua',true))()
-end)
-
-v1MainSection:NewButton("Fe Dog", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Stable Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Dog",true))()
-    end)
-
-    v1MainSection:NewButton("Fe Dog Car", "Only R6 Games", function(v)
-        wait(1)
-        game.StarterGui:SetCore("SendNotification", {
-            Title = "Executed!";
-            Text = "Stable Net Required";
-            Duration = 20;
-        })
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Dog%20Car",true))()
-        end)
-
-v1MainSection:NewButton("Fe Ai Soldier", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Stable Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Ai%20Soldier.lua"))()
-end)
-
-v1MainSection:NewButton("Fe Combine Soldier", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Stable Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Soldier.txt"))()
-    end)
-
-v1MainSection:NewButton("Fe Ball", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Only R6 , R15";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Ball.lua"))()
-end)
-
-v1MainSection:NewButton("Fe Fallen Anger", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Stable Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Fallen%20Anger.lua"))()
-end)
-
-v1MainSection:NewButton("Fe Ender", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Mid Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Ender.txt"))()
-    end)
-
-
-v1MainSection:NewButton("Fe Rave", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Stable Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Rave%20thingy.lua"))()
-    end)
-    
-    v1MainSection:NewButton("Fe BigHead", "Only R6 Games", function(v)
-        wait(1)
-        game.StarterGui:SetCore("SendNotification", {
-            Title = "Not Works on R6";
-            Text = "Only R15";
-            Duration = 20;
-        })
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20big%20Head.lua"))()
-        end)
-
-        v1MainSection:NewButton("Fe Sonice", "Only R6 Games", function(v)
-            wait(1)
-            game.StarterGui:SetCore("SendNotification", {
-                Title = "Executed!";
-                Text = "Stable/Max Net Required";
-                Duration = 20;
-            })
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20sonic.txt"))()
-            end)
-
-            v1MainSection:NewButton("Fe Neko", "Only R6 Games", function(v)
-                wait(1)
-                game.StarterGui:SetCore("SendNotification", {
-                    Title = "Executed!";
-                    Text = "Max Net Required";
-                    Duration = 20;
-                })
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20neko.txt"))()
-                end)
-
-                v1MainSection:NewButton("Fe Rainbow", "Only R6 Games", function(v)
-                    wait(1)
-                    game.StarterGui:SetCore("SendNotification", {
-                        Title = "Executed!";
-                        Text = "Stable/Max Net Required";
-                        Duration = 20;
-                    })
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/FE%20raindbow"))()
-                    end)
-
-                    v1MainSection:NewButton("Fe Big BBs", "Only R6 Games", function(v)
-                        wait(1)
-                        game.StarterGui:SetCore("SendNotification", {
-                            Title = "Executed!";
-                            Text = "Stable/Max Net Required";
-                            Duration = 20;
-                        })
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Big%20Bbs"))()
-                        end)
-
-                        v1MainSection:NewButton("Fe AmoungUs", "Only R6 Games", function(v)
-                            wait(1)
-                            game.StarterGui:SetCore("SendNotification", {
-                                Title = "Executed!";
-                                Text = "Stable/Max Net Required";
-                                Duration = 20;
-                            })
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Amoug%20us"))()
-                            end)
-
-                v1MainSection:NewButton("Fe NerverSwitcher", "Only R6 Games", function(v)
-                    wait(1)
-                    game.StarterGui:SetCore("SendNotification", {
-                        Title = "Executed!";
-                        Text = "Stable Net Required";
-                        Duration = 20;
-                    })
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Nevers%20Switcher.txt"))()
-                    end)
-
-                    v1MainSection:NewButton("Fe Minigun", "Only R6 Games", function(v)
-                        wait(1)
-                        game.StarterGui:SetCore("SendNotification", {
-                            Title = "Executed!";
-                            Text = "Stable Net Required";
-                            Duration = 20;
-                        })
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Minigun"))()
-                        end)
-
-                        v1MainSection:NewButton("Fe Glitcher", "Only R6 Games", function(v)
-                            wait(1)
-                            game.StarterGui:SetCore("SendNotification", {
-                                Title = "Executed!";
-                                Text = "Stable Net Required";
-                                Duration = 20;
-                            })
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Glitcher"))()
-                            end)
-
-                            v1MainSection:NewButton("Fe Glitcher v2", "Only R6 Games", function(v)
-                                wait(1)
-                                game.StarterGui:SetCore("SendNotification", {
-                                    Title = "Executed!";
-                                    Text = "Stable Net Required";
-                                    Duration = 20;
-                                })
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Glitcher%20v2"))()
-                                end)
-
-                                v1MainSection:NewButton("Fe Glitcher v3", "Only R6 Games", function(v)
-                                    wait(1)
-                                    game.StarterGui:SetCore("SendNotification", {
-                                        Title = "Executed!";
-                                        Text = "Stable Net Required";
-                                        Duration = 20;
-                                    })
-                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Glitcher%20v3"))()
-                                    end)
-
-                                    v1MainSection:NewButton("Fe Glitcher v4", "Only R6 Games", function(v)
-                                        wait(1)
-                                        game.StarterGui:SetCore("SendNotification", {
-                                            Title = "Executed!";
-                                            Text = "Stable Net Required";
-                                            Duration = 20;
-                                        })
-                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Glitcher%20v4"))()
-                                        end)
-    
-
-                                        v1MainSection:NewButton("Fe Shadow Blade", "Only R6 Games", function(v)
-                                            wait(1)
-                                            game.StarterGui:SetCore("SendNotification", {
-                                                Title = "Executed!";
-                                                Text = "Stable Net Required";
-                                                Duration = 20;
-                                            })
-                                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Shadow%20Blade"))()
-                                            end)
-
-                        v1MainSection:NewButton("Fe Neptune RB Sword", "Only R6 Games", function(v)
-                            wait(1)
-                            game.StarterGui:SetCore("SendNotification", {
-                                Title = "Executed!";
-                                Text = "Stable Net Required";
-                                Duration = 20;
-                            })
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/rb%20sword"))()
-                            end)
-
-                    v1MainSection:NewButton("Fe Neptune V3", "Only R6 Games", function(v)
-                        wait(1)
-                        game.StarterGui:SetCore("SendNotification", {
-                            Title = "Executed!";
-                            Text = "Stable Net Required";
-                            Duration = 20;
-                        })
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Neptune_V_Switcher.txt"))()
-                        end)
-
-                        v1MainSection:NewButton("Fe Pen", "Only R6 Games", function(v)
-                            wait(1)
-                            game.StarterGui:SetCore("SendNotification", {
-                                Title = "Executed!";
-                                Text = "Stable Net Required";
-                                Duration = 20;
-                            })
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20pen"))()
-                            end)
-
-                            v1MainSection:NewButton("Fe Slasher", "Only R6 Games", function(v)
-                                wait(1)
-                                game.StarterGui:SetCore("SendNotification", {
-                                    Title = "Executed!";
-                                    Text = "Stable Net Required";
-                                    Duration = 20;
-                                })
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Slasher"))()
-                                end)
-
-                                v1MainSection:NewButton("Fe Scythe", "Only R6 Games", function(v)
-                                    wait(1)
-                                    game.StarterGui:SetCore("SendNotification", {
-                                        Title = "Executed!";
-                                        Text = "Stable Net Required";
-                                        Duration = 20;
-                                    })
-                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Scythe"))()
-                                    end)
-
-                v1MainSection:NewButton("Fe KrystalDance", "Only R6 Games", function(v)
-                    wait(1)
-                    game.StarterGui:SetCore("SendNotification", {
-                        Title = "Executed!";
-                        Text = "Mid/Stable Net Required";
-                        Duration = 20;
-                    })
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20krystal%20dance.txt"))()
-                    end)
-
-                    v1MainSection:NewButton("Fe Killer", "Only R6 Games", function(v)
-                        wait(1)
-                        game.StarterGui:SetCore("SendNotification", {
-                            Title = "Executed!";
-                            Text = "Mid/Stable Net Required";
-                            Duration = 20;
-                        })
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Killer.txt"))()
-                        end)
-
-                        v1MainSection:NewButton("Fe Flip", "Only R6 Games", function(v)
-                            wait(1)
-                            game.StarterGui:SetCore("SendNotification", {
-                                Title = "Executed!";
-                                Text = "R6 Required";
-                                Duration = 20;
-                            })
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20Flip"))()
-                            end)
-
-                            v1MainSection:NewButton("Fe SkateBoard", "Only R6 Games", function(v)
-                                wait(1)
-                                game.StarterGui:SetCore("SendNotification", {
-                                    Title = "Executed!";
-                                    Text = "Mid/Stable Net Required";
-                                    Duration = 20;
-                                })
-                                loadstring(game:HttpGet("https://pastebin.com/raw/XAXCaupJ"))()
-                                end)
-
-
-
-                    v1MainSection:NewButton("Fe Caducus", "Only R6 Games", function(v)
-                        wait(1)
-                        game.StarterGui:SetCore("SendNotification", {
-                            Title = "Executed!";
-                            Text = "Mid/Stable Net Required";
-                            Duration = 20;
-                        })
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20caducus%20or%20somen.txt"))()
-                        end)
-
-                        v1MainSection:NewButton("Fe Xester v2", "Only R6 Games", function(v)
-                            wait(1)
-                            game.StarterGui:SetCore("SendNotification", {
-                                Title = "Executed!";
-                                Text = "Press F ;)";
-                                Duration = 20;
-                            })
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20caducus%20or%20somen.txt"))()
-                            end)                
-
-        v1MainSection:NewButton("Fe Rave", "Only R6 Games", function(v)
-            wait(1)
-            game.StarterGui:SetCore("SendNotification", {
-                Title = "Executed!";
-                Text = "Mid/Stable Net Required";
-                Duration = 20;
-            })
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20big%20Head.lua"))()
+        MainSection:NewButton("day", "", function(v)
+            game:GetService("Lighting").ClockTime = 14
             end)
 
 
-v1MainSection:NewButton("Fe Pacifist", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Stable Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Pacifist.txt"))()
-end)
-
-v1MainSection:NewButton("Fe Gale Fighter", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Stable Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Gale%20fighter"))()
-    end)
-
-v1MainSection:NewButton("Fe Paluse Gun", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Stable Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Paluse%20Gun"))()
-    end)
-
-    v1MainSection:NewButton("Fe Aiju LoveTrap Rifle", "Only R6 Games", function(v)
-        wait(1)
-       game.StarterGui:SetCore("SendNotification", {
-       Title = "Executed!";
-        Text = "Stable Net Required";
-     Duration = 20;
-     })
-     loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Aiju%20Love%20Trap%20Rifle"))()
-     end) 
-
-
-v1MainSection:NewButton("Fe Gun-Type34", "Type34 Hat ,  Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Stable Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20gun%20(broken%20fling).lua"))()
-end)
-
-v1MainSection:NewButton("Fe Sniper-Gun", "Sniper Hat , Still Broken", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Stable Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Gun%20(%20sniper%20mode%20).lua"))()
-end)
-
-v1MainSection:NewButton("Fe AR-15", "Sniper Hat , Still Broken", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Stable Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20AR-15"))()
-    end)
-
-v1MainSection:NewButton("Fe Ellio Gun ", "Ellio blasio Hat ,  Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Stable Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Ellio%20Blasio%20v2"))()
-    end)
-
-v1MainSection:NewButton("Fe Punch", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Go Punch SomePeople";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20punch.lua"))()
-end)
-
-v1MainSection:NewButton("Fe Mouse Fling", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Click To Fling";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/mouse%20fling"))()
-end)
-
-v1MainSection:NewButton("Fe Head Fling", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Click To Fling";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Head%20Fling.txt"))()
-    end)
-    
-
-v1MainSection:NewButton("Fe LightningCanon", "Railgun Hat", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Stable Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Lightning%20Canon.txt"))()
-end)
-
-v1MainSection:NewButton("Fe LightningCanonv2", "Rpg Hat , Smoother execution", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Stable Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Lightning%20Canon%20(%20Rpg%20%2C%20Smoother%20).txt"))()
-end)
-
-
-v1MainSection:NewButton("Fe WalkOnWalls", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20WalkOnWalls.txt"))()
-end)
-
-v1MainSection:NewButton("Fe Glide", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Mid/Stable Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Glide%20(%20sword%20edit%20).lua"))()
-end)
-
-v1MainSection:NewButton("Fe Godzstuctor", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Mid/Stable Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20GodZSTRUCTOR.lua"))()
-end)
-
-v1MainSection:NewButton("Fe VR ", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Mid/Stable/Max Net Required";
-    Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20vr%20headset.lua"))()
-end)
-
-v1MainSection:NewButton("Fe Vr v2", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Low/Mid/Stable Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/VR%20MODE%20V2"))()
-    end) 
-
-v1MainSection:NewButton("Fe Distracted", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Stable Net Required";
-        Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/FE%20distracted.txt"))()
-    end)
-
-    v1MainSection:NewButton("Fe Abyss", "Only R6 Games", function(v)
-        wait(1)
-        game.StarterGui:SetCore("SendNotification", {
-            Title = "Executed!";
-            Text = "Mid/Stable Net Required";
-            Duration = 20;
-        })
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Abyss.txt"))()
-        end)
-
-        v1MainSection:NewButton("Fe Billy", "Only R6 Games", function(v)
-            wait(1)
-            game.StarterGui:SetCore("SendNotification", {
-                Title = "Executed!";
-                Text = "Mid Net Required";
-                Duration = 20;
-            })
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Billy.txt"))()
-            end)
-
-            v1MainSection:NewButton("Fe Boombox", "Only R6 Games", function(v)
-                wait(1)
-                game.StarterGui:SetCore("SendNotification", {
-                    Title = "Executed!";
-                    Text = "Stable Net Required";
-                    Duration = 20;
-                })
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Boombox.txt"))()
+            MainSection:NewButton("night", "", function(v)
+                game:GetService("Lighting").ClockTime = 0
                 end)
 
-                v1MainSection:NewButton("Fe Grab Claw", "Only R6 Games", function(v)
-                    wait(1)
-                    game.StarterGui:SetCore("SendNotification", {
-                        Title = "Executed!";
-                        Text = "Stable Net Required";
-                        Duration = 20;
-                    })
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Fe%20Grab%20Claw.txt"))()
+                MainSection:NewButton("Shadows", "", function(v)
+                    game:GetService("Lighting").GlobalShadows = true
                     end)
 
-                    v1MainSection:NewButton("Fe Cursed Spider", "Only R6 Games", function(v)
-                        wait(1)
-                        game.StarterGui:SetCore("SendNotification", {
-                            Title = "Executed!";
-                            Text = "Stable Net Required";
-                            Duration = 20;
-                        })
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Cursed%20Spider.txt"))()
-                        end)
-
-                        v1MainSection:NewButton("Fe Invisiblity", "Only R6 Games", function(v)
-                            wait(1)
-                            game.StarterGui:SetCore("SendNotification", {
-                                Title = "Executed!";
-                                Text = "Stable Net Required";
-                                Duration = 20;
-                            })
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Invisiblity.txt"))()
-                            end)    
-
-                            v1MainSection:NewButton("Fe Nullion", "Only R6 Games", function(v)
-                                wait(1)
-                                game.StarterGui:SetCore("SendNotification", {
-                                    Title = "Executed!";
-                                    Text = "Stable Net Required";
-                                    Duration = 20;
-                                })
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Nullioner.txt"))()
-                                end) 
-
-                                v1MainSection:NewButton("Fe IronMan", "Only R6 Games", function(v)
-                                    wait(1)
-                                    game.StarterGui:SetCore("SendNotification", {
-                                        Title = "Executed!";
-                                        Text = "Stable Net Required";
-                                        Duration = 20;
-                                    })
-                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Ironman%20Suit.txt"))()
-                                    end) 
-
-                                    v1MainSection:NewButton("Fe SucideRagdoll", "Only R6 Games", function(v)
-                                        wait(1)
-                                        game.StarterGui:SetCore("SendNotification", {
-                                            Title = "Executed!";
-                                            Text = "Stable Net Required";
-                                            Duration = 20;
-                                        })
-                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Sucide%20Ragdoll.txt"))()
-                                        end) 
-
-                                        v1MainSection:NewButton("Fe Finger v2", "Only R6 Games", function(v)
-                                            wait(1)
-                                            game.StarterGui:SetCore("SendNotification", {
-                                                Title = "Executed!";
-                                                Text = "Stable Net Required";
-                                                Duration = 20;
-                                            })
-                                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Finger%20V2.txt"))()
-                                            end) 
 
 
-                                                v1MainSection:NewButton("Fe Physics Gun", "Only R6 Games", function(v)
-                                                    wait(1)
-                                                    game.StarterGui:SetCore("SendNotification", {
-                                                        Title = "Executed!";
-                                                        Text = "Stable Net Required";
-                                                        Duration = 20;
-                                                    })
-                                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Physics%20Gun.txt"))()
-                                                    end) 
+
+MainSection:NewButton("Fullbright", "", function(v)
+    game:GetService("Lighting").Brightness = 2
+	game:GetService("Lighting").ClockTime = 14
+	game:GetService("Lighting").FogEnd = 100000
+	game:GetService("Lighting").GlobalShadows = false
+	game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+    end)
 
 
- v1MainSection:NewButton("Fe Hacker", "Only R6 Games", function(v)
-wait(1)
-game.StarterGui:SetCore("SendNotification", {
-Title = "Executed!";
-Text = "Stable Net Required";
-Duration = 20;
-})
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Hacker"))()
-end)
+MainSection:NewButton("Client Headless", "Inorder to Show Rejoin.", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/client_headless-1.txt", true))()
+    end)
 
-v1MainSection:NewButton("Fe Server Admin", "Only R6 Games", function(v)
-    wait(1)
-    game.StarterGui:SetCore("SendNotification", {
-    Title = "Executed!";
-    Text = "Stable Net Required";
-    Duration = 20;
-    })
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/ONEReverseCard/My-Scripts/main/Netless%20Server%20Admin.md"))()
-    end) 
-    
-    v1MainSection:NewButton("Fe Chara", "Only R6 Games", function(v)
-        wait(1)
-        game.StarterGui:SetCore("SendNotification", {
-        Title = "Executed!";
-        Text = "Stable Net Required";
-        Duration = 20;
-        })
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Chara"))()
-        end) 
-
-        v1MainSection:NewButton("Fe Eye Ball", "Only R6 Games", function(v)
+        MainSection:NewButton("ChatBypass", "Inorder to Show Rejoin.", function(v)
             wait(1)
             game.StarterGui:SetCore("SendNotification", {
-            Title = "Executed!";
-            Text = "Stable Net Required";
-            Duration = 20;
-            })
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Eye"))()
-            end) 
-
-            v1MainSection:NewButton("Fe Sans", "Only R6 Games", function(v)
-                wait(1)
-                game.StarterGui:SetCore("SendNotification", {
-                Title = "Executed!";
-                Text = "Stable Net Required";
+                Title = "WARNING USE ALT ";
+                Text = "THIS SCRIPT IS BANNABLE";
                 Duration = 20;
-                })
-                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Sans"))()
-                end) 
+            })
+            wait(3)
+            loadstring(game:HttpGet("https://the-shed.xyz/roblox/scripts/ChatBypass", true))()
+            
+            end)
 
-                v1MainSection:NewButton("Fe Song", "Only R6 Games", function(v)
-                    wait(1)
-                    game.StarterGui:SetCore("SendNotification", {
-                    Title = "Executed!";
-                    Text = "Stable Net Required";
-                    Duration = 20;
-                    })
-                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Song"))()
-                    end) 
-
-                    v1MainSection:NewButton("Fe Memer", "Only R6 Games", function(v)
-                        wait(1)
-                        game.StarterGui:SetCore("SendNotification", {
-                        Title = "Executed!";
-                        Text = "Stable Net Required";
-                        Duration = 20;
-                        })
-                        loadstring(game:HttpGetAsync("https://pastebin.com/raw/2MSTmKBa"))()
-                        end) 
+    MainSection:NewButton("Client Korblox", "Inorder to Show Rejoin.", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/client_korblox-1.txt", true))()
+        end)
 
 
-                    v1MainSection:NewButton("Fe Part Inspect", "Only R6 Games", function(v)
-                        wait(1)
-                        game.StarterGui:SetCore("SendNotification", {
-                        Title = "Executed!";
-                        Text = "Stable Net Required";
-                        Duration = 20;
-                        })
-                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Part%20inspect"))()
-                        end) 
 
-                        v1MainSection:NewButton("Fe Headless", "Only R6 Games", function(v)
-                            wait(1)
-                            game.StarterGui:SetCore("SendNotification", {
-                            Title = "Executed!";
-                            Text = "Stable Net Required";
-                            Duration = 20;
-                            })
-                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Headless"))()
-                            end) 
-
-                            v1MainSection:NewButton("Fe Creature", "Only R6 Games", function(v)
-                                wait(1)
-                                game.StarterGui:SetCore("SendNotification", {
-                                Title = "Executed!";
-                                Text = "Stable Net Required";
-                                Duration = 20;
-                                })
-                                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Creature"))()
-                                end) 
-
-                                v1MainSection:NewButton("Fe Guts", "Only R6 Games", function(v)
-                                    wait(1)
-                                    game.StarterGui:SetCore("SendNotification", {
-                                    Title = "Executed!";
-                                    Text = "Stable Net Required";
-                                    Duration = 20;
-                                    })
-                                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Guts"))()
-                                    end) 
-
-                                    v1MainSection:NewButton("Fe FlameThrower", "Only R6 Games", function(v)
-                                        wait(1)
-                                        game.StarterGui:SetCore("SendNotification", {
-                                        Title = "Executed!";
-                                        Text = "Stable Net Required";
-                                        Duration = 20;
-                                        })
-                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Flamethrower"))()
-                                        end) 
-
-                                        v1MainSection:NewButton("Fe Head Pet", "Only R6 Games", function(v)
-                                            wait(1)
-                                            game.StarterGui:SetCore("SendNotification", {
-                                            Title = "Executed!";
-                                            Text = "Stable Net Required";
-                                            Duration = 20;
-                                            })
-                                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Head%20Pet"))()
-                                            end) 
-
-                                            v1MainSection:NewButton("Fe Spiderman", "R6 R15", function(v)
-                                                wait(1)
-                                                game.StarterGui:SetCore("SendNotification", {
-                                                Title = "Executed!";
-                                                Text = "Stable Net Required";
-                                                Duration = 20;
-                                                })
-                                                loadstring(game:HttpGet(('https://raw.githubusercontent.com/ItsDishan/SpidermanScript/main/Spider-Man%20V1.0'), true))()
-                                                end)
-
-                                                v1MainSection:NewButton("Fe ToolAnimator", "R6 R15", function(v)
-                                                    wait(1)
-                                                    game.StarterGui:SetCore("SendNotification", {
-                                                    Title = "Executed!";
-                                                    Text = "Stable Net Required";
-                                                    Duration = 20;
-                                                    })
-                                                    loadstring(game:HttpGet(('https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Tool%20Animator'), true))()
-                                                    end) 
+        MainSection:NewButton("Btools", "", function(v)
+            Instance.new("HopperBin", game.Players.LocalPlayer.Backpack).BinType = 4
+            game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+            end)
 
 
-                                                    v1MainSection:NewButton("Fe BookReader", "Only R6 Games", function(v)
-                                                        wait(1)
-                                                        game.StarterGui:SetCore("SendNotification", {
-                                                        Title = "Executed!";
-                                                        Text = "Stable Net Required";
-                                                        Duration = 20;
-                                                        })
-                                                        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Book%20Reader"))()
-                                                        end) 
+       
+
+MainSection:NewButton("FeGrabtool", "", function(v)
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/bTOOL"))()
+    end)
+
+    MainSection:NewButton("F3X", "", function(v)
+
+        loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+            end)
 
 
-                                                        v1MainSection:NewButton("Fe Table", "Only R6 Games", function(v)
-                                                            wait(1)
-                                                            game.StarterGui:SetCore("SendNotification", {
-                                                            Title = "Executed!";
-                                                            Text = "Stable Net Required";
-                                                            Duration = 20;
-                                                            })
-                                                            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20table"))()
-                                                            end) 
+            MainSection:NewButton("Remove's KickMessage", "", function(v)
+                game.CoreGui.RobloxGui:Destroy()
+                game.CoreGui.RobloxPromptGui:Destroy()
+                end)
+
+            MainSection:NewButton("Custom Cursor Hit", "", function(v)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/custom%20crusor"))()
+                end)
 
 
-  v1MainSection:NewButton("Fe Wall", "Only R6 Games", function(v)
-   wait(1)
-  game.StarterGui:SetCore("SendNotification", {
-  Title = "Executed!";
-   Text = "Stable Net Required";
-Duration = 20;
+
+                MainSection:NewButton("GameCopy ", "Only R6 Games", function(v)
+
+                    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/wl/main/Game_Copy_Script.txt", true))()
+                end)
+
+                wait(0.4)
+
+
+
+
+
+
+ local Main = Window:NewTab("Settings")
+ local MainSection = Main:NewSection("  MainScript ")
+
+
+MainSection:NewButton("Anti-AFK", "Be Afk Forever!", function(v)
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Anti - AFK";
+    Text = "Enabled ";
+    Duration = 20;
 })
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Wall"))()
-end) 
+end)
 
-v1MainSection:NewButton("Fe Pyramind", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Pyramind"))()
- end) 
-
- v1MainSection:NewButton("Fe Long Legs", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Long%20legs"))()
- end) 
-
- v1MainSection:NewButton("Fe Chair", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Chair"))()
- end) 
-
- v1MainSection:NewButton("Fe Invisible", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Invisible%20v2"))()
- end) 
-
- v1MainSection:NewButton("Fe BlackHole", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20black%20hole"))()
- end) 
-
- v1MainSection:NewButton("Fe Stand", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Stand"))()
- end) 
-
- v1MainSection:NewButton("Fe UFO", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20UFO"))()
- end) 
-
- v1MainSection:NewButton("Fe UFO(free version)", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20UFO%20v2"))()
- end)
-
- v1MainSection:NewButton("Fe Wing", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Wing"))()
- end) 
-
- v1MainSection:NewButton("Fe Eye", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Eye1"))()
- end) 
-
- v1MainSection:NewButton("Fe ClassicAnimation", "Only R6 Games", function(v)
-    wait(1)
-   game.StarterGui:SetCore("SendNotification", {
-   Title = "Executed!";
-    Text = "Stable Net Required";
- Duration = 20;
- })
- loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/CookieLogger/main/Fe%20Classical%20Animation"))()
- end) 
+MainSection:NewButton("Anti-Ban", "Ignore Ban System", function(v)
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Anti_Chat_Log-1.txt"))()
+    end)
 
 
+    MainSection:NewButton("Anti-Chatlog", "Ignore Bannable ChatSysmtem", function(v)
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/Anti_Chat_Log-1.txt"))()
+        end)
 
+        MainSection:NewButton("Anti-Kick", "Prevents Kick Scripts", function(v)
+            local mt = getrawmetatable(game)
+            local old = mt.__namecall
+            local protect = newcclosure or protect_function
+        
+            if not protect then
+                notify("Incompatible Exploit Warning", "Your exploit does not support protection against stack trace errors, resulting to fallback function")
+                protect = function(f) return f end
+            end
+        
+            setreadonly(mt, false)
+            mt.__namecall = protect(function(self, ...)
+                local method = getnamecallmethod()
+                if method == "Kick" then
+                    wait(9e9)
+                    return
+                end
+                return old(self, ...)
+            end)
+            hookfunction(Players.LocalPlayer.Kick,protect(function() wait(9e9) end))
+        
+            notify('Client Antikick','Client anti kick is now active (only effective on localscript kick)')
+            end)
+
+            MainSection:NewButton("Anti-Report", "Prevents Getting Reported", function(v)
+                setfflag("AbuseReportScreenshotPercentage", 0)
+setfflag("DFFlagAbuseReportScreenshot", "False")
+                end)
+
+            MainSection:NewButton("Chat-Spy", "Spy some nerds", function(v)
+                loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/spychat", true))()
+                end)
+
+                local MainSection = Main:NewSection("  SideScripts ")
+
+                MainSection:NewButton("LowerFPSCap", "Drops your FPS Cap", function(v)
+                    setfpscap("30")
+
+                end)
+                
+                MainSection:NewButton("NoFPSCap", "Unlimited FPS Cap", function(v)
+                    setfpscap("999")
+
+                end)
+                
+                MainSection:NewButton("8% GPU ", "Aigt Nowway", function(v)
+                    
+                    	game.StarterGui:SetCore("SendNotification", {
+		Title = "Warning!";
+		Text = "YOUR GAME WILL BE UNPLAYABLE";
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+		Duration = 20;
+		
+		wait(2)
+                    setfpscap("8")
+
+                end)
+
+                MainSection:NewButton("5% GPU ", "Aigt Nowway", function(v)
+                    
+                    	game.StarterGui:SetCore("SendNotification", {
+		Title = "Warning!";
+		Text = "YOUR GAME WILL BE UNPLAYABLE";
+        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
+		Duration = 20;
+		
+		wait(2)
+                    setfpscap("5")
+                
+wait(4)
+                
+                
+                
+                local UserInputService = game:GetService("UserInputService")
+local RunService = game:GetService("RunService")
+
+local WindowFocusReleasedFunction = function()
+	RunService:Set3dRenderingEnabled(false)
+	setfpscap(5)
+	return
+end
+
+local WindowFocusedFunction = function()
+	RunService:Set3dRenderingEnabled(true)
+	setfpscap(30)
+	return
+end
+
+local Initialize = function()
+	UserInputService.WindowFocusReleased:Connect(WindowFocusReleasedFunction)
+	UserInputService.WindowFocused:Connect(WindowFocusedFunction)
+	return
+end
+Initialize()
+
+                end)
+
+                MainSection:NewButton("Rec", "Rec Any Games", function(v)
+                    return game:GetService("CoreGui"):ToggleRecording()
+                end)
+
+                MainSection:NewButton("Fullsc", "Full screen", function(v)
+                    return game:GetService("GuiService"):ToggleFullscreen()
+                end)
+                
+                MainSection:NewButton("ScreenShoot", "SS AnyGames", function(v)
+                    return game:GetService("CoreGui"):TakeScreenshot()
+                end)
+
+                MainSection:NewButton("Force Exit", "Shuts your Game Completly", function(v)
+                    return game:GetService("CoreGui"):TakeScreenshot()
+                end)
+
+                MainSection:NewKeybind("Close/Open ", "Close GUI", Enum.KeyCode.G, function()
+                    Library:ToggleUI()
+                end)
