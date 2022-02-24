@@ -43,8 +43,34 @@ if game.PlaceId == 2788229376 then
 		repeat GetKnife() until plr.Backpack:FindFirstChild('[Knife]') and plr.Backpack:FindFirstChild('[LockPicker]')
 		char.HumanoidRootPart.CFrame = CFrame.new(X,Y+5,Z)
 	end)
+	
+	                MainSection:NewKeybind("Close/Open ", "Close GUI", Enum.KeyCode.G, function()
+                    Library:ToggleUI()
+                end)
+	
+	
+	
+		MainSection:NewButton("EquipTools", "ButtonInfo", function(v)
+        game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Character
+        wait(1)
+        game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Character
+        wait(1)
+        game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Character
+        wwait(1)
+        game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Character
+        wait(1)
+        game.Players.LocalPlayer.Backpack:FindFirstChildOfClass("Tool").Parent = game.Players.LocalPlayer.Character
+        wait(1)
+	end) 
+	
 
 	MainSection:NewButton("Anti peper", "ButtonInfo", function(v)
+		wait()
+		plr.PlayerGui.MainScreenGui.PepperSpray:Destroy()
+		plr.PlayerGui.MainScreenGui.SNOWBALLFRAME:Destroy()
+	end) 
+
+	MainSection:NewButton("Auto flowers", "ButtonInfo", function(v)
 while wait() do 
    fireclickdetector(game:GetService("Workspace").Ignored.Shop["[Flowers] - $5"].ClickDetector)
     wait(30)
@@ -57,15 +83,6 @@ while wait() do
 end;
 	end) 
 
-	MainSection:NewButton("Auto Buy Flowers", "ButtonInfo", function(v)
-		wait()
-		plr.PlayerGui.MainScreenGui.PepperSpray:Destroy()
-		plr.PlayerGui.MainScreenGui.SNOWBALLFRAME:Destroy()
-	end) 
-
-	MainSection:NewButton("Chat Spy", "Warn trying cmds", function(v)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/Rogg15/autofarm/main/spychat", true))()
-	end)
 
 	MainSection:NewButton("Infinite Yeild", "Warn trying cmds", function(v)
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
@@ -74,12 +91,6 @@ end;
 
 	MainSection:NewButton("Target", "hunts enemy", function(v)
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/GS21Official/DH-VictimMenu-Script/main/Dh%20VictimMenu%3A%20Script"))()
-	end)
-
-	MainSection:NewButton("Silent Aim", "!you will get fps drop when your godmodded", function(v)
-		getgenv().Performance = true
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/i-nasa/intel_main/main/script.lua"))()
 	end)
 
 	MainSection:NewButton("Trashtalk macro", "KeyBlind - T", function(v)
@@ -291,12 +302,12 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/i-nasa/intel_main/mai
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/encryptgui.lua"))()
 	end)
 
-	v2Section:NewButton("Encrypt", "Encrypt", function(v)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/legacy/2point5legacy.lua"))()
-	end)
-
 	v2Section:NewButton("Artic", "", function(v)
 		loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Karz1337/Arctic/main/ArcticV2"))()
+	end)
+
+	v2Section:NewButton("ecryt1.2", "", function(v)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/legacy/2point5legacy.lua"))()
 	end)
 
 	v2Section:NewButton("Auto Drop Gui", "Encrypt", function(v)
@@ -304,17 +315,19 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/i-nasa/intel_main/mai
 	end)
 
 	v2Section:NewButton("Advance alt control", "Encrypt", function(v)
--- Only required when using command setup/lineuup.
-getgenv().Droppers = {1312819741,2395183348,2395242469,2395242469}
--- Required for all commands. [operators can't drop]
-getgenv().Operator = {1821780137}
--- Required to operate [default is ?]
-getgenv().Prefix = "?"
--- Required for the command advertise or ad
-getgenv().AdvertiseMessage = ".gg/rogmarketv"
--- Required when command ?buyerbring is used.
-getgenv().BringerID = {1312819741} -- Only 1 alt thats in the game.
-loadstring(game:HttpGet("https://raw.githubusercontent.com/fuckscripts/dhshit/main/alt_control.lua"))()
+	
+getgenv().Settings = {
+    Operator = {1821780137},
+    Prefix = '!',
+    AdMsg = 'strix on top',
+    AdDelay = 5,
+    FPS_CAP = 10,
+    BlackScreen = false,
+    WebhookURL = 'Enter a webhook',
+}
+getgenv().Alts = {2395183348,3195512339,3202640105,2710094666,2395223942,1312819741,1654315397,1088310350,}
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/grandpascripts/error404/main/Roblox/DaHood/AltCntrl/script.lua"))()
 
 end)
 
