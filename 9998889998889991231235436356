@@ -5914,7 +5914,7 @@ local Section = Tab:AddSection({
 })
 
 
-Tab:AddButton({Name = "AimLock (e)",Callback = function()
+Tab:AddButton({Name = "AimLock (t)",Callback = function()
 
     OrionLib:MakeNotification({
         Name = "Notification",
@@ -5922,7 +5922,7 @@ Tab:AddButton({Name = "AimLock (e)",Callback = function()
         Time = 5
     })
 
-    _G.KEY = "e"
+    _G.KEY = "t"
     _G.PART = "LowerTorso"
     _G.PRED = 0.037
     _G.Frame = Vector3.new(0,0.53,0)
