@@ -4169,7 +4169,6 @@ end
 
 
 
---[[
 
 local Tab = Window:MakeTab({Name = "AutoBuy",Icon = "rbxassetid://7072721954",PremiumOnly = false
 })
@@ -4195,7 +4194,6 @@ for i,v in pairs(game:GetService("Workspace").Ignored.Shop:GetChildren()) do
 end    
 })
 end
-]]
 
 
 
@@ -5916,7 +5914,14 @@ local Section = Tab:AddSection({
 })
 
 
-Tab:AddButton({Name = "AimLock",Callback = function()
+Tab:AddButton({Name = "AimLock (e)",Callback = function()
+
+    OrionLib:MakeNotification({
+        Name = "Notification",
+        Content = "Aimlock executed",
+        Time = 5
+    })
+
     _G.KEY = "e"
     _G.PART = "LowerTorso"
     _G.PRED = 0.037
