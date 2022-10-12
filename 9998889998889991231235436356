@@ -1,4 +1,8 @@
 
+   if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 local Window = OrionLib:MakeWindow({Name = "Xscrobic X", HidePremium = false, SaveConfig = true, ConfigFolder = "Scuba", IntroEnabled = false, IntroText = "Dahood"})
@@ -1925,6 +1929,9 @@ Tab:AddToggle({Name = "Cash Aura",Default = false,Callback = function(v)
                 if game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Script'):FindFirstChild('LocalScript') then
                     game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Script'):FindFirstChild('LocalScript').Disabled = true
                 end
+                if game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild('OriginalSize') then
+                    game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
+                end
             for i,v in pairs(game:GetService('Workspace')['Ignored']['Drop']:GetChildren()) do
                 if v:IsA('Part') then
                     if (v.Position - player.Character.HumanoidRootPart.Position).Magnitude <= 12 then
@@ -2568,9 +2575,7 @@ local Section = Tab:AddSection({
 })
 
 Tab:AddButton({Name = "Titan mode",Callback = function()
-    if game.Players.LocalPlayer then
-        game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
-        game.Players.LocalPlayer.Character:WaitForChild("BodyEffects")
+
         local success, err = pcall(function()
 
             local Humanoid = game.Players.LocalPlayer.Character.Humanoid;
@@ -2609,7 +2614,9 @@ Tab:AddButton({Name = "Titan mode",Callback = function()
             game.Players.LocalPlayer.Character.UpperTorso.LeftCollarAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.UpperTorso.RightCollarAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.UpperTorso.NeckAttachment.OriginalPosition:Destroy()
-            game.Players.LocalPlayer.Character.UpperTorso.OriginalSize:Destroy() 
+            if game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild("OriginalSize") then
+                game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild("OriginalSize"):Destroy() 
+            end
             game.Players.LocalPlayer.Character.RightFoot.OriginalSize:Destroy() 
             game.Players.LocalPlayer.Character.RightFoot.RightAnkleRigAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.LeftFoot.OriginalSize:Destroy() 
@@ -2634,7 +2641,7 @@ Tab:AddButton({Name = "Titan mode",Callback = function()
             game.Players.LocalPlayer.Character.LeftLowerArm.OriginalSize:Destroy()
             game.Players.LocalPlayer.Character.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.LeftLowerArm.LeftWristRigAttachment.OriginalPosition:Destroy()
-            wait()
+            wait(.1)
             Humanoid:FindFirstChild("BodyTypeScale"):Destroy()
             wait(0.3)
             game.Players.LocalPlayer.Character.Head.OriginalSize:Destroy()
@@ -2672,7 +2679,9 @@ Tab:AddButton({Name = "Titan mode",Callback = function()
             game.Players.LocalPlayer.Character.UpperTorso.LeftCollarAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.UpperTorso.RightCollarAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.UpperTorso.NeckAttachment.OriginalPosition:Destroy()
-            game.Players.LocalPlayer.Character.UpperTorso.OriginalSize:Destroy() 
+            if game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild("OriginalSize") then
+                game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild("OriginalSize"):Destroy() 
+                end
             game.Players.LocalPlayer.Character.RightFoot.OriginalSize:Destroy() 
             game.Players.LocalPlayer.Character.RightFoot.RightAnkleRigAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.LeftFoot.OriginalSize:Destroy() 
@@ -2697,7 +2706,7 @@ Tab:AddButton({Name = "Titan mode",Callback = function()
             game.Players.LocalPlayer.Character.LeftLowerArm.OriginalSize:Destroy()
             game.Players.LocalPlayer.Character.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.LeftLowerArm.LeftWristRigAttachment.OriginalPosition:Destroy()
-            wait()
+            wait(.1)
             Humanoid:FindFirstChild("BodyWidthScale"):Destroy()
             wait(0.3)
     
@@ -2736,7 +2745,9 @@ Tab:AddButton({Name = "Titan mode",Callback = function()
             game.Players.LocalPlayer.Character.UpperTorso.LeftCollarAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.UpperTorso.RightCollarAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.UpperTorso.NeckAttachment.OriginalPosition:Destroy()
-            game.Players.LocalPlayer.Character.UpperTorso.OriginalSize:Destroy() 
+            if game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild("OriginalSize") then
+                game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild("OriginalSize"):Destroy() 
+                end
             game.Players.LocalPlayer.Character.RightFoot.OriginalSize:Destroy() 
             game.Players.LocalPlayer.Character.RightFoot.RightAnkleRigAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.LeftFoot.OriginalSize:Destroy() 
@@ -2761,7 +2772,7 @@ Tab:AddButton({Name = "Titan mode",Callback = function()
             game.Players.LocalPlayer.Character.LeftLowerArm.OriginalSize:Destroy()
             game.Players.LocalPlayer.Character.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.LeftLowerArm.LeftWristRigAttachment.OriginalPosition:Destroy()
-            wait()
+            wait(.1)
             Humanoid:FindFirstChild("BodyDepthScale"):Destroy()
             wait(0.3)
             game.Players.LocalPlayer.Character.Head.OriginalSize:Destroy()
@@ -2799,7 +2810,9 @@ Tab:AddButton({Name = "Titan mode",Callback = function()
             game.Players.LocalPlayer.Character.UpperTorso.LeftCollarAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.UpperTorso.RightCollarAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.UpperTorso.NeckAttachment.OriginalPosition:Destroy()
-            game.Players.LocalPlayer.Character.UpperTorso.OriginalSize:Destroy() 
+            if game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild("OriginalSize") then
+                game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild("OriginalSize"):Destroy() 
+                end
             game.Players.LocalPlayer.Character.RightFoot.OriginalSize:Destroy() 
             game.Players.LocalPlayer.Character.RightFoot.RightAnkleRigAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.LeftFoot.OriginalSize:Destroy() 
@@ -2824,12 +2837,11 @@ Tab:AddButton({Name = "Titan mode",Callback = function()
             game.Players.LocalPlayer.Character.LeftLowerArm.OriginalSize:Destroy()
             game.Players.LocalPlayer.Character.LeftLowerArm.LeftElbowRigAttachment.OriginalPosition:Destroy()
             game.Players.LocalPlayer.Character.LeftLowerArm.LeftWristRigAttachment.OriginalPosition:Destroy()
-            wait()
+            wait(.1)
             Humanoid:FindFirstChild("HeadScale"):Destroy()
             wait(0.3)
-
         end)
-    end
+
 end    
 })
 
@@ -3731,20 +3743,8 @@ Tab:AddButton({Name = "Godv1.1 (fling)",Callback = function()
 end    
 })
 
-Tab:AddButton({Name = "Godv3 (BETA)",Callback = function()
 
-    OrionLib:MakeNotification({
-        Name = "Notification",
-        Content = "Required Katana Tool",
-        Time = 5
-    })
-end    
-})
-
-
-
-
-
+Tab:AddParagraph("ScriptInfo: ","Required Rejoin, Dont use when duping!")
 
 
 
@@ -5541,9 +5541,22 @@ local Tab = Window:MakeTab({Name = "AutoFarms",Icon = "",PremiumOnly = false
 })
 
 
-
-
-
+spawn(function()
+game:GetService("RunService").Heartbeat:Connect(function()
+    if game.Players.LocalPlayer then
+        game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart")
+        game.Players.LocalPlayer.Character:WaitForChild("BodyEffects")
+    local success, err = pcall(function()
+        if game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Script'):FindFirstChild('LocalScript') then
+            game.Players.LocalPlayer.Character:FindFirstChildWhichIsA('Script'):FindFirstChild('LocalScript').Disabled = true
+        end
+        if game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild('OriginalSize') then
+            game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
+        end
+    end)
+    end
+end)
+end)
 
 
 
@@ -5743,113 +5756,300 @@ local Section = Tab:AddSection({
 	Name = "Gun AutoFarms"
 })
 
-
-Tab:AddButton({Name = "Godmode",Callback = function()
-local P1000ToggleKey = "x" -- Change that to whatever keybind: "t"
- 
- 
 --[[
- 
-    Standing still will trick the hitbox, you won't be able to get hit.
- 
- 
-    DO NOT EDIT BEYOND THIS POINT IF YOU DON'T UNDERSTAND WHAT IS GOING ON.
-    
-    ORIGINAL SOURCE PUT INTO SKID FRIENDLY FORMAT TAKE WHAT YOU LIKE AND MAKE MANY MORE OBLIVITIES CLONES WITH THIS OR EVEN YOUR VERY OWN DIY OBLIVITY!
-    
-    AND REMEMBER TO SAY, SO LOOOOONG OBLIVITYYYYYY!!!
- 
- 
---]]
- 
- 
---// Services
-checkcaller = checkcaller
-newcclosure = newcclosure
-hookmetamethod = hookmetamethod
- 
-local PastedSources = false
-local BruhXD = game:GetService("RunService")
-local LocalPlayer = game:GetService("Players").LocalPlayer
-local Bullshit = LocalPlayer:GetMouse()
- 
- 
---// Toggles
-Bullshit.KeyDown:Connect(function(SayNoToOblivity)
-    if SayNoToOblivity == string.lower(P1000ToggleKey) then
-        pcall(function()
-            if PastedSources == false then
-                PastedSources = true
-                print("Enabled P1000")
-            elseif PastedSources == true then
-                PastedSources = false
-                print("Disabled P1000")
+Tab:AddButton({Name = "Godmode",Callback = function()
+
+        checkcaller = checkcaller
+        newcclosure = newcclosure
+        hookmetamethod = hookmetamethod
+        
+        local PastedSources = false
+        local BruhXD = game:GetService("RunService")
+        local LocalPlayer = game:GetService("Players").LocalPlayer
+        local Bullshit = LocalPlayer:GetMouse()
+        
+        
+        --// Toggles
+        Bullshit.KeyDown:Connect(function(SayNoToOblivity)
+            if SayNoToOblivity == string.lower(P1000ToggleKey) then
+                pcall(function()
+                    if PastedSources == false then
+                        PastedSources = true
+                        print("Enabled P1000")
+                    elseif PastedSources == true then
+                        PastedSources = false
+                        print("Disabled P1000")
+                    end
+                end)
             end
         end)
-    end
-end)
+        
+        Bullshit.KeyDown:Connect(function(SayNoToOblivity)
+            if SayNoToOblivity == ("=") then
+                game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer) 
+            end
+        end)
+        
+        
+        --// Desync_Source
+        function RandomNumberRange(a)
+            return math.random(-a * 100, a * 100) / 100
+        end
+        
+        function RandomVectorRange(a, b, c)
+            return Vector3.new(RandomNumberRange(a), RandomNumberRange(b), RandomNumberRange(c))
+        end
+        
+        
+        local DesyncTypes = {}
+        BruhXD.Heartbeat:Connect(function()
+            if PastedSources == true then
+                DesyncTypes[1] = LocalPlayer.Character.HumanoidRootPart.CFrame
+                DesyncTypes[2] = LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity
+        
+                local SpoofThis = LocalPlayer.Character.HumanoidRootPart.CFrame
+        
+                SpoofThis = SpoofThis * CFrame.new(Vector3.new(0, 0, 0))
+                SpoofThis = SpoofThis * CFrame.Angles(math.rad(RandomNumberRange(1)), math.rad(RandomNumberRange(1)), math.rad(RandomNumberRange(1)))
+        
+                LocalPlayer.Character.HumanoidRootPart.CFrame = SpoofThis
+        
+                LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(1, 1, 1) * 16384
+        
+                BruhXD.RenderStepped:Wait()
+        
+                LocalPlayer.Character.HumanoidRootPart.CFrame = DesyncTypes[1]
+                LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = DesyncTypes[2]
+            end
+        end)
+        
+        
+        --// Hook_CFrame
+        local XDDDDDD = nil
+        XDDDDDD = hookmetamethod(game, "__index", newcclosure(function(self, key)
+            if PastedSources == true then
+                if not checkcaller() then
+                    if key == "CFrame" and PastedSources == true and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and LocalPlayer.Character:FindFirstChild("Humanoid") and LocalPlayer.Character:FindFirstChild("Humanoid").Health > 0 then
+                        if self == LocalPlayer.Character.HumanoidRootPart then
+                            return DesyncTypes[1] or CFrame.new()
+                        elseif self == LocalPlayer.Character.Head then
+                            return DesyncTypes[1] and DesyncTypes[1] + Vector3.new(0, LocalPlayer.Character.HumanoidRootPart.Size / 2 + 0.5, 0) or CFrame.new()
+                        end
+                    end
+                end
+            end
+            return XDDDDDD(self, key)
+        end))
+end 
+}) 
+]]
+
+
+Tab:AddButton({Name = "DoubleBarrel Farm",Callback = function()
+
+
+
  
-Bullshit.KeyDown:Connect(function(SayNoToOblivity)
-    if SayNoToOblivity == ("=") then
-        game:GetService("TeleportService"):Teleport(game.PlaceId, LocalPlayer) 
-    end
-end)
- 
- 
---// Desync_Source
-function RandomNumberRange(a)
-    return math.random(-a * 100, a * 100) / 100
+
+
+if game.Players.LocalPlayer.Backpack:FindFirstChild("[Double-Barrel SG]") then
+    game.Players.LocalPlayer.Character.Humanoid:EquipTool(game.Players.LocalPlayer.Backpack:FindFirstChild("[Double-Barrel SG]"))
 end
- 
-function RandomVectorRange(a, b, c)
-    return Vector3.new(RandomNumberRange(a), RandomNumberRange(b), RandomNumberRange(c))
-end
- 
- 
-local DesyncTypes = {}
-BruhXD.Heartbeat:Connect(function()
-    if PastedSources == true then
-        DesyncTypes[1] = LocalPlayer.Character.HumanoidRootPart.CFrame
-        DesyncTypes[2] = LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity
- 
-        local SpoofThis = LocalPlayer.Character.HumanoidRootPart.CFrame
- 
-        SpoofThis = SpoofThis * CFrame.new(Vector3.new(0, 0, 0))
-        SpoofThis = SpoofThis * CFrame.Angles(math.rad(RandomNumberRange(1)), math.rad(RandomNumberRange(1)), math.rad(RandomNumberRange(1)))
- 
-        LocalPlayer.Character.HumanoidRootPart.CFrame = SpoofThis
- 
-        LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(1, 1, 1) * 16384
- 
-        BruhXD.RenderStepped:Wait()
- 
-        LocalPlayer.Character.HumanoidRootPart.CFrame = DesyncTypes[1]
-        LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = DesyncTypes[2]
+
+
+for i,v in pairs(game:GetService'Players'.LocalPlayer.Character:GetChildren())do   
+    if v:isA("Tool") then                                        
+     v.GripPos = Vector3.new(1.6,-1.2,-2.7)   
     end
-end)
- 
- 
---// Hook_CFrame
-local XDDDDDD = nil
-XDDDDDD = hookmetamethod(game, "__index", newcclosure(function(self, key)
-    if PastedSources == true then
-        if not checkcaller() then
-            if key == "CFrame" and PastedSources == true and LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart") and LocalPlayer.Character:FindFirstChild("Humanoid") and LocalPlayer.Character:FindFirstChild("Humanoid").Health > 0 then
-                if self == LocalPlayer.Character.HumanoidRootPart then
-                    return DesyncTypes[1] or CFrame.new()
-                elseif self == LocalPlayer.Character.Head then
-                    return DesyncTypes[1] and DesyncTypes[1] + Vector3.new(0, LocalPlayer.Character.HumanoidRootPart.Size / 2 + 0.5, 0) or CFrame.new()
+end
+
+
+    wait(0.5)
+    if game.Players.LocalPlayer.Character:FindFirstChild("[Double-Barrel SG]") then
+        game.Players.LocalPlayer.Character.Humanoid:UnequipTools(game.Players.LocalPlayer.Character:FindFirstChild("[Double-Barrel SG]"))
+    end
+
+if game.Players.LocalPlayer.Character.Animate:FindFirstChild("idle") then
+    game.Players.LocalPlayer.Character.Animate.idle:Destroy()
+end
+local me = game:service'Players'.LocalPlayer
+local plr = game.Players.LocalPlayer
+local savedarmourpos = plr.Character.HumanoidRootPart.Position
+local toolname = "[Double-Barrel SG] - $1400"
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Ignored.Shop[toolname].Head.Position)
+wait(.1)
+fireclickdetector(game.Workspace.Ignored.Shop[toolname].ClickDetector)
+wait(.1)
+fireclickdetector(game.Workspace.Ignored.Shop[toolname].ClickDetector)
+wait(.1)
+fireclickdetector(game.Workspace.Ignored.Shop[toolname].ClickDetector)
+wait(.1)
+fireclickdetector(game.Workspace.Ignored.Shop[toolname].ClickDetector)
+wait(.1)
+fireclickdetector(game.Workspace.Ignored.Shop[toolname].ClickDetector)
+wait(.1)
+fireclickdetector(game.Workspace.Ignored.Shop[toolname].ClickDetector)
+wait(.1)
+me.Character.Humanoid:EquipTool(me.Backpack:FindFirstChild("[Double-Barrel SG]"))
+wait(0.001)
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+plr.Character.HumanoidRootPart.CFrame = CFrame.new(savedarmourpos)
+function bypass()
+    local oh1 = CFrame.new(681.7394409179688, 194.24996948242188, -405.8536071777344)
+    local oh2 = game:GetService("Players")
+    local oh3 = oh2.LocalPlayer.Character.HumanoidRootPart
+
+    oh3.CFrame = oh1
+    wait(1.5)
+end
+repeat
+    wait()
+until game:IsLoaded()
+
+if workspace.Players[game.Players.LocalPlayer.Name]:FindFirstChild("[Double-Barrel SG]") then
+    workspace.Players[game.Players.LocalPlayer.Name]:FindFirstChild("[Double-Barrel SG]").Name = "[X]"
+
+    function Buy()
+        fireclickdetector(workspace.Ignored.Shop["18 [Double-Barrel SG Ammo] - $60"].ClickDetector)
+        wait(.3)
+        fireclickdetector(workspace.Ignored.Shop["18 [Double-Barrel SG Ammo] - $60"].ClickDetector)
+        wait(.3)
+        fireclickdetector(workspace.Ignored.Shop["18 [Double-Barrel SG Ammo] - $60"].ClickDetector)
+        wait(.3)
+        fireclickdetector(workspace.Ignored.Shop["18 [Double-Barrel SG Ammo] - $60"].ClickDetector)
+        wait(.3)
+        fireclickdetector(workspace.Ignored.Shop["18 [Double-Barrel SG Ammo] - $60"].ClickDetector)
+        wait(.3)
+        fireclickdetector(workspace.Ignored.Shop["18 [Double-Barrel SG Ammo] - $60"].ClickDetector)
+    end
+
+    local ATM = "nil"
+    local idk = false
+    local dineros = false
+    local lol = 0
+
+    function GetATM()
+        bypass()
+        for i, v in pairs(workspace.Cashiers:GetChildren()) do
+            if v:WaitForChild("Humanoid").Health > 0 then
+                local cf = v.Open.CFrame
+                local lv = cf.lookVector
+                game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame = cf + (lv * Vector3.new(0, 0, -2))
+                game.ReplicatedStorage.MainEvent:FireServer("UpdateMousePos", v.Open.Position)
+                return v
+            end
+        end
+    end
+
+    function GETMONEY()
+        for i,v in pairs(game:GetService('Workspace')['Ignored']['Drop']:GetChildren()) do
+            if v:IsA('Part') then
+                if (v.Position - player.Character.HumanoidRootPart.Position).Magnitude <= 12 then
+                    dineros = true
+                    fireclickdetector(v:FindFirstChild('ClickDetector'))
+                    wait(0.8)
+                    dineros = false
                 end
             end
         end
     end
-    return XDDDDDD(self, key)
-end))
-end 
-}) 
 
-Tab:AddButton({Name = "Godmode",Callback = function()
-    
+    ATM = GetATM()
+
+    function reload(name, gun)
+        local XD1 = "Reload"
+        local XD2 = game:GetService("Workspace").Players[name][gun]
+        local Event = game:GetService("ReplicatedStorage").MainEvent
+        Event:FireServer(XD1, XD2)
+    end
+    game:GetService("RunService").Heartbeat:Connect(
+    function()
+        GETMONEY()
+        
+        if lol == 0 and dineros == false then
+            if game.Players.LocalPlayer.DataFolder.Inventory["[Double-Barrel SG]"].Value == "0" and idk == false then
+                lol = 10
+                idk = true
+                local part = workspace.Ignored.Shop["18 [Double-Barrel SG Ammo] - $60"].Head
+                game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame =
+                CFrame.new(part.CFrame.X, part.CFrame.Y + 4, part.CFrame.Z)
+                game.workspace.Players[game.Players.LocalPlayer.Name]["[X]"].Parent =
+                game.Players.LocalPlayer.Backpack
+                wait(2)
+                for i = 1, 10 do
+                    game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame =
+                        CFrame.new(
+                            part.CFrame.X + math.random(1, 2),
+                            part.CFrame.Y + math.random(1, 2),
+                            part.CFrame.Z + math.random(1, 2)
+                        )
+                    Buy()
+                    wait(0.5)
+                end
+                game.Players.LocalPlayer.Backpack["[X]"].Parent =
+                    game.workspace.Players[game.Players.LocalPlayer.Name]
+                lol = 0
+                idk = false
+                local cf = ATM.Open.CFrame
+                local lv = cf.lookVector
+                game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame =
+                    cf + (lv * Vector3.new(0, 0, -2))
+            end
+            if
+                game.workspace.Players[game.Players.LocalPlayer.Name]:WaitForChild("[X]").Ammo.Value == 1 and
+                    idk == false
+            then
+                idk = true
+                reload(game.Players.LocalPlayer.Name, "[X]")
+                wait(0.5)
+                idk = false
+            else
+                for i, v in pairs(workspace.Cashiers:GetChildren()) do
+                    if v:WaitForChild("Humanoid").Health > 0 then
+                        if idk == false then
+                            if ATM.Humanoid.Health > 0 then
+                                game:GetService("VirtualUser"):Button1Down(Vector2.new(0, 0, 0))
+                                local cf = ATM.Open.CFrame
+                                local lv = cf.lookVector
+                                game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame =
+                                    cf + (lv * Vector3.new(0, 0, -2))
+                            end
+                        end
+                    end
+                end
+            end
+            for i, v in pairs(workspace.Cashiers:GetChildren()) do
+                if v:WaitForChild("Humanoid").Health > 0 then
+                    if ATM.Humanoid.Health < 0 and idk == false then
+                        lol = 10
+                        wait(0.1)
+                        if idk == false then
+                            local cf = ATM.Open.CFrame
+                            local lv = cf.lookVector
+                            game.workspace.Players[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame =
+                                cf + (lv * Vector3.new(0, 0, -2))
+
+                            ATM = GetATM()
+                        end
+                        lol = 0
+                    end
+                end
+            end
+        end
+    end)
+end
+
+
+
+
+
+
+
+
+
+
+
+
 end 
 }) 
     
@@ -6236,7 +6436,7 @@ end
 Tab:AddToggle({Name = "Legit AntiLock",Default = false,Callback = function(v)
     Duration = 2;
     AntiLock = true
-    local hip = 2.39
+    local hip = 2.4
     local val = -40
     local cmdp = game:GetService("Players")
     local cmdlp = cmdp.LocalPlayer
@@ -6322,7 +6522,7 @@ function AntiAIM()
     end)
 end
 
-Tab:AddToggle({Name = "Anti Lockv2",Default = false,Callback = function(v)
+Tab:AddToggle({Name = "AntiLock v2",Default = false,Callback = function(v)
 
     PastedSources = false
     if v == true then
@@ -6352,6 +6552,7 @@ Tab:AddToggle({Name = "Anti Lockv2",Default = false,Callback = function(v)
         local DesyncTypes = {}
         BruhXD.Heartbeat:Connect(function()
             if PastedSources == true then
+                local success, err = pcall(function()
                 DesyncTypes[1] = LocalPlayer.Character.HumanoidRootPart.CFrame
                 DesyncTypes[2] = LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity
          
@@ -6368,6 +6569,7 @@ Tab:AddToggle({Name = "Anti Lockv2",Default = false,Callback = function(v)
          
                 LocalPlayer.Character.HumanoidRootPart.CFrame = DesyncTypes[1]
                 LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = DesyncTypes[2]
+                end)
             end
         end)
          
@@ -7546,6 +7748,14 @@ Tab:AddToggle({Name = "Anti RemoteBan",Default = false,Save = true,Flag = "Noban
 
 })
 
+Tab:AddToggle({Name = "Godv3 ",Default = false,Save = true,Flag = "Godv3"
+
+})
+
+
+
+
+
 
 
 
@@ -7882,6 +8092,19 @@ spawn(function()
     end)
 
 
+    --Godv3
+    spawn(function()
+        if not game:IsLoaded() then
+            game.Loaded:Wait()
+        end
+        wait(5)
+    if OrionLib.Flags["Godv3"].Value == true then 
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/pixelheadx/godv3Polakya/main/README.md"))();
+        end
+    end)
+
+
+
     --Nofogscreen
     spawn(function()
         if not game:IsLoaded() then
@@ -7918,6 +8141,13 @@ spawn(function()
         if not game:IsLoaded() then
             game.Loaded:Wait()
         end
+
+
+        if game:GetService("CoreGui").RobloxGui.NotificationFrame then
+           game:GetService("CoreGui").RobloxGui.NotificationFrame.Visible = false
+           wait(15)
+           game:GetService("CoreGui").RobloxGui.NotificationFrame.Visible = true
+       end
         privateProperties = {
         Color = Color3.fromRGB(128, 128, 128); 
         Font = Enum.Font.SourceSansBold;
