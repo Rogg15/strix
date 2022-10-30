@@ -161,7 +161,7 @@ Tab:AddButton({Name = "Bike Fly",Callback = function()
 
 
     if game.Players.LocalPlayer.Character then
-       if not game.Players.LocalPlayer.character.Humanoid.Sit == false then
+       if game.Players.LocalPlayer.character.Humanoid.Sit == false then
         OrionLib:MakeNotification({
             Name = "Script Required",
             Content = "Please Seat/Get a Bike",
@@ -210,6 +210,7 @@ Tab:AddButton({Name = "Bike Fly",Callback = function()
                 g.Picture.Image.Image = "rbxassetid://181035717"
                 g.TextLabel.Text = ""
                 g.Parent = c.Parent
+                g.Visible = false
             end
             if seat ~= nil and seat:IsDescendantOf(game.Workspace.Vehicles) then
                 if seat ~= old then
@@ -6436,7 +6437,7 @@ end
 Tab:AddToggle({Name = "Legit AntiLock",Default = false,Callback = function(v)
     Duration = 2;
     AntiLock = true
-    local hip = 2.4
+    local hip = 2.6
     local val = -40
     local cmdp = game:GetService("Players")
     local cmdlp = cmdp.LocalPlayer
@@ -8496,6 +8497,27 @@ end
 
 
 
+
+game:GetService("Lighting").GlobalShadows = false
+
+if _G.Reduce_Lag ==  nil then
+    task.delay(5, function()
+        if not game.Players.LocalPlayer.Character then
+            local v1 = game.Players.LocalPlayer.CharacterAdded:wait();
+        end;
+        _G.Reduce_Lag = true;
+        _G.Reduce_LagParts = {};
+        local function u1(p1)
+            if p1:IsA("BasePart") then
+                table.insert(_G.Reduce_LagParts, { p1, p1.Material });
+                print("4w")
+            end;
+            for v2, v3 in pairs(p1:GetChildren()) do
+                u1(v3);
+            end;
+        end;
+end)
+end
 
 
 
