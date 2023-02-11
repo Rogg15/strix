@@ -20,7 +20,7 @@ wait(0.2)
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib(" Strix Rog GX15 | Advance I   Universal Hub ", "Synapse")
+local Window = Library.CreateLib(" Strix Rog GX123332232323Hub ", "Synapse")
 
 
 local Main = Window:NewTab(" Main Info ")
