@@ -1,26 +1,8 @@
-wait(3)
 
-wait(0.2)
-
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Checking Whitelisted... ";
-		Text = "Loading...";
-		Duration = 10;
-	})
-		wait(1)
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "Whitelisted";
-		Text = "Load Complete";
-        Icon = "rbxthumb://type=Asset&id=5107182114&w=150&h=150"})
-		Duration = 20;
-
-	 wait(1)
-
-    
 
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib(" Strix Rog GX15 | Advance I   Universal Hub ", "Synapse")
+local Window = Library.CreateLib(" Strix Rog GX213123rsal Hub ", "Synapse")
 
 
 local Main = Window:NewTab(" Main Info ")
