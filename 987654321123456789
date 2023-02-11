@@ -1,10 +1,7 @@
-wait(2)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LPrandom/lua-projects/master/antiafk.lua"))()
-wait(1)
 
 if game.PlaceId == 2788229376 then
 	local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-	local Window = Library.CreateLib("Rog GX15", "Synapse")
+	local Window = Library.CreateLib("wdwdwadawdad5", "Synapse")
 
 	-- MAIN
 	local Main = Window:NewTab("Main")
